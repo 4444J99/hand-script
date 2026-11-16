@@ -10,4 +10,15 @@ Origin: the Perplexity Space `053d129c-8941-4aa7-8dde-61aede81813d` began as a
 handwriting-practice and linguistics curriculum (writing systems, etymological roots, 18
 languages in nine families). Its Middle English turn of 2026-11-10 moved to `chaucer`.
 
-Status: no code yet; this repository is the home for the handwriting and script-learning work.
+Plan: `.claude/plans/2026-11-16-handwriting-practice-and-tracker.md`.
+
+## Use
+
+```bash
+PYTHONPATH=src python3 -m hand_script sheets all --out sheets
+```
+
+Writes printable HTML (open in a browser, print A4): a letter sheet and a line-copy sheet
+per script (Greek, Hebrew so far). New script = new JSON file in `src/hand_script/data/`.
+
+Tests: `PYTHONPATH=src python3 -m unittest discover -s tests`.

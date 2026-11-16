@@ -1,0 +1,220 @@
+{
+ "id": "hebrew",
+ "name": "Hebrew",
+ "direction": "rtl",
+ "order": 4,
+ "font": "'Times New Roman','Arial Hebrew',serif",
+ "reason": "Torah, Psalms, prophetic diction",
+ "letters": [
+  {
+   "upper": "",
+   "lower": "א",
+   "name": "alef",
+   "sound": "silent / glottal",
+   "practice": [
+    "א"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ב",
+   "name": "bet",
+   "sound": "b / v",
+   "practice": [
+    "ב"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ג",
+   "name": "gimel",
+   "sound": "g",
+   "practice": [
+    "ג"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ד",
+   "name": "dalet",
+   "sound": "d",
+   "practice": [
+    "ד"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ה",
+   "name": "he",
+   "sound": "h",
+   "practice": [
+    "ה"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ו",
+   "name": "vav",
+   "sound": "v / o / u",
+   "practice": [
+    "ו"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ז",
+   "name": "zayin",
+   "sound": "z",
+   "practice": [
+    "ז"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ח",
+   "name": "chet",
+   "sound": "kh (guttural)",
+   "practice": [
+    "ח"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ט",
+   "name": "tet",
+   "sound": "t",
+   "practice": [
+    "ט"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "י",
+   "name": "yod",
+   "sound": "y / i",
+   "practice": [
+    "י"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "כ",
+   "name": "kaf",
+   "sound": "k / kh",
+   "practice": [
+    "כ",
+    "ך"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ל",
+   "name": "lamed",
+   "sound": "l",
+   "practice": [
+    "ל"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "מ",
+   "name": "mem",
+   "sound": "m",
+   "practice": [
+    "מ",
+    "ם"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "נ",
+   "name": "nun",
+   "sound": "n",
+   "practice": [
+    "נ",
+    "ן"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ס",
+   "name": "samekh",
+   "sound": "s",
+   "practice": [
+    "ס"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ע",
+   "name": "ayin",
+   "sound": "silent / pharyngeal",
+   "practice": [
+    "ע"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "פ",
+   "name": "pe",
+   "sound": "p / f",
+   "practice": [
+    "פ",
+    "ף"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "צ",
+   "name": "tsadi",
+   "sound": "ts",
+   "practice": [
+    "צ",
+    "ץ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ק",
+   "name": "qof",
+   "sound": "q (k)",
+   "practice": [
+    "ק"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ר",
+   "name": "resh",
+   "sound": "r",
+   "practice": [
+    "ר"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ש",
+   "name": "shin",
+   "sound": "sh / s",
+   "practice": [
+    "ש"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ת",
+   "name": "tav",
+   "sound": "t",
+   "practice": [
+    "ת"
+   ]
+  }
+ ],
+ "copy_lines": [
+  {
+   "source": "Genesis 1:1",
+   "text": "בראשית ברא אלהים את השמים ואת הארץ",
+   "gloss": "In the beginning God created the heavens and the earth"
+  }
+ ]
+}

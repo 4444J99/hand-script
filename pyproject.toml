@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hand-script"
+version = "0.1.0"
+description = "Handwriting practice and learning new writing systems"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+hand-script = "hand_script.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+hand_script = ["data/*.json"]
