@@ -35,7 +35,10 @@ class PacketTests(unittest.TestCase):
         self.assertIn("Level 3", html)
         self.assertEqual(html.count('class="day"'), 7)
         self.assertIn("200 min logged", html)
-        self.assertIn("Level 1", packet.packet(g, [], today))
+        self.assertEqual(html.count("Check against:"), 7)
+        low = packet.packet(g, [], today)
+        self.assertIn("Level 1", low)
+        self.assertNotIn("Check against:", low)
 
     def test_rtl_packet(self):
         html = packet.packet(scripts.load("arabic"), [], date(2026, 11, 16))
