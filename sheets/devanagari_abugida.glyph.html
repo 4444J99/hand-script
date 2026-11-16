@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hand-Script Glyph Sheet — Devanagari</title>
+  <style>@page { size: A4 portrait; margin: 12mm; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 16px 20px;
+  background: #f6f5f1;
+  color: #181818;
+  font-family: "Noto Serif", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  font-size: 10.5pt;
+  line-height: 1.42;
+}
+main {
+  max-width: 190mm;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #d4d0c8;
+  padding: 16px 20px 20px;
+}
+header.sheet-header {
+  border-bottom: 1.5px solid #222222;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+header.sheet-header h1 {
+  margin: 0 0 4px;
+  font-size: 15pt;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-size: 8.8pt;
+  color: #3d3d3d;
+}
+.caveat-box {
+  background: #f8f7f3;
+  border-left: 3px solid #5a5a52;
+  padding: 6px 10px;
+  margin: 8px 0 12px;
+  font-size: 8.6pt;
+  color: #333333;
+}
+.principles {
+  margin: 0 0 12px;
+  padding-left: 18px;
+  font-size: 9pt;
+}
+.principles li { margin-bottom: 2px; }
+section.glyph-card, section.passage-card {
+  border: 1px solid #dbd7cf;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+.glyph-header, .passage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+.glyph-specimen {
+  font-size: 16pt;
+  font-weight: 600;
+  padding-right: 6px;
+}
+.codepoints, .badge {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 8pt;
+  color: #444444;
+  background: #f0eee8;
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+.subnote {
+  font-size: 8.6pt;
+  color: #424242;
+  margin: 2px 0 6px;
+}
+.passage-specimen {
+  font-size: 13.5pt;
+  margin: 4px 0;
+  padding: 4px 6px;
+  background: #faf9f6;
+  border: 1px solid #ece9e1;
+}
+.lexical-list {
+  margin: 4px 0 6px;
+  padding-left: 16px;
+  font-size: 8.4pt;
+  color: #2f2f2f;
+}
+.ruling-wrap {
+  margin: 4px 0;
+}
+svg.ruling {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.protocol-footer {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid #c8c4bc;
+  font-size: 8.4pt;
+  color: #363636;
+  break-inside: avoid;
+}
+.protocol-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px 10px;
+  margin-top: 4px;
+}
+@media print {
+  body { background: #ffffff; padding: 0; }
+  main { max-width: none; border: none; padding: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+  <header class="sheet-header">
+    <h1>Devanagari — Exemplar Glyph Sheet</h1>
+    <div class="meta-strip">
+      <span><strong>Typology:</strong> abugida</span>
+      <span><strong>Encoded Unit:</strong> akshara (orthographic syllable unit centered on consonant(s) + vowel)</span>
+      <span><strong>Direction:</strong> ltr</span>
+      <span><strong>Ruling:</strong> head-line</span>
+      <span><strong>Interference Group:</strong> brahmic-headline-abugida</span>
+    </div>
+  </header>
+  <div class="caveat-box">
+    <strong>Methodological Note:</strong> Faint trace glyphs come from standard typographic fonts to indicate structural proportion and component placement, not a calligraphic master exemplar. Handwriting practice builds grapheme-motor recall and orthographic awareness; track reading comprehension separately.
+  </div>
+  <div class="subnote"><strong>Inventory:</strong> 11-14 independent vowels + 33-35 base consonants with inherent /a/ + dependent matras + virama (्) and conjunct ligatures<br><strong>Ductus &amp; Proportion:</strong> Draw the consonant body and vertical stem (danda) first, attach sub/super-linear vowel matras, and draw the horizontal head-line (shirorekha) LAST across the word (leaving prescribed breaks over ध, भ, थ, ष). Note visual vs logical order: short-i matra (ि) is written visually BEFORE its consonant.</div>
+  <section class="glyph-card"><div class="glyph-header"><div><span class="glyph-specimen" dir="ltr"><bdi>अ आ इ ई उ ऊ</bdi></span> <strong>Independent vowels</strong> (/ə, aː, i, iː, u, uː/)</div><span class="codepoints">U+0905 U+0906 U+0907 U+0908 U+0909 U+090A</span></div><div class="subnote">Used syllable-initially; post-consonantal vowels use dependent matras (ा ि ी ु ू)</div><div class="ruling-wrap"><svg class="ruling ruling-head-line" viewBox="0 0 680 56" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="head-line handwriting ruling"><text x="2" y="9" font-size="8" fill="#666666">Trace &amp; repeat from memory -&gt;</text><line x1="0" y1="11" x2="680" y2="11" stroke="#cdc7bc" stroke-width="0.7" stroke-dasharray="3,4"/><line x1="0" y1="20" x2="680" y2="20" stroke="#3f3c37" stroke-width="1.35"/><line x1="0" y1="40" x2="680" y2="40" stroke="#a8a297" stroke-width="0.85" stroke-dasharray="4,3"/><line x1="0" y1="51" x2="680" y2="51" stroke="#d0cbc1" stroke-width="0.8"/><text x="8" y="39" font-size="21" fill="#c8c4bc">अ आ इ ई उ ऊ   अ आ इ ई उ ऊ   अ आ इ ई उ ऊ</text></svg></div></section><section class="glyph-card"><div class="glyph-header"><div><span class="glyph-specimen" dir="ltr"><bdi>क ख ग घ ङ</bdi></span> <strong>Velar varga</strong> (/kə, kʰə, ɡə, ɡʱə, ŋə/)</div><span class="codepoints">U+0915 U+0916 U+0917 U+0918 U+0919</span></div><div class="subnote">Systematic five-column articulatory row: voiceless, aspirated, voiced, breathy-voiced, nasal</div><div class="ruling-wrap"><svg class="ruling ruling-head-line" viewBox="0 0 680 56" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="head-line handwriting ruling"><text x="2" y="9" font-size="8" fill="#666666">Trace &amp; repeat from memory -&gt;</text><line x1="0" y1="11" x2="680" y2="11" stroke="#cdc7bc" stroke-width="0.7" stroke-dasharray="3,4"/><line x1="0" y1="20" x2="680" y2="20" stroke="#3f3c37" stroke-width="1.35"/><line x1="0" y1="40" x2="680" y2="40" stroke="#a8a297" stroke-width="0.85" stroke-dasharray="4,3"/><line x1="0" y1="51" x2="680" y2="51" stroke="#d0cbc1" stroke-width="0.8"/><text x="8" y="39" font-size="21" fill="#c8c4bc">क ख ग घ ङ   क ख ग घ ङ   क ख ग घ ङ</text></svg></div></section><section class="glyph-card"><div class="glyph-header"><div><span class="glyph-specimen" dir="ltr"><bdi>त थ द ध न</bdi></span> <strong>Dental varga</strong> (/t̪ə, t̪ʰə, d̪ə, d̪ʱə, nə/)</div><span class="codepoints">U+0924 U+0925 U+0926 U+0927 U+0928</span></div><div class="subnote">Contrast carefully with retroflex row ट ठ ड ढ ण</div><div class="ruling-wrap"><svg class="ruling ruling-head-line" viewBox="0 0 680 56" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="head-line handwriting ruling"><text x="2" y="9" font-size="8" fill="#666666">Trace &amp; repeat from memory -&gt;</text><line x1="0" y1="11" x2="680" y2="11" stroke="#cdc7bc" stroke-width="0.7" stroke-dasharray="3,4"/><line x1="0" y1="20" x2="680" y2="20" stroke="#3f3c37" stroke-width="1.35"/><line x1="0" y1="40" x2="680" y2="40" stroke="#a8a297" stroke-width="0.85" stroke-dasharray="4,3"/><line x1="0" y1="51" x2="680" y2="51" stroke="#d0cbc1" stroke-width="0.8"/><text x="8" y="39" font-size="21" fill="#c8c4bc">त थ द ध न   त थ द ध न   त थ द ध न</text></svg></div></section><section class="glyph-card"><div class="glyph-header"><div><span class="glyph-specimen" dir="ltr"><bdi>प फ ब भ म</bdi></span> <strong>Labial varga</strong> (/pə, pʰə, bə, bʱə, mə/)</div><span class="codepoints">U+092A U+092B U+092C U+092D U+092E</span></div><div class="subnote">भ keeps an open loop at top-left interrupting the shirorekha</div><div class="ruling-wrap"><svg class="ruling ruling-head-line" viewBox="0 0 680 56" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="head-line handwriting ruling"><text x="2" y="9" font-size="8" fill="#666666">Trace &amp; repeat from memory -&gt;</text><line x1="0" y1="11" x2="680" y2="11" stroke="#cdc7bc" stroke-width="0.7" stroke-dasharray="3,4"/><line x1="0" y1="20" x2="680" y2="20" stroke="#3f3c37" stroke-width="1.35"/><line x1="0" y1="40" x2="680" y2="40" stroke="#a8a297" stroke-width="0.85" stroke-dasharray="4,3"/><line x1="0" y1="51" x2="680" y2="51" stroke="#d0cbc1" stroke-width="0.8"/><text x="8" y="39" font-size="21" fill="#c8c4bc">प फ ब भ म   प फ ब भ म   प फ ब भ म</text></svg></div></section><section class="glyph-card"><div class="glyph-header"><div><span class="glyph-specimen" dir="ltr"><bdi>पद् / पद</bdi></span> <strong>Pad- (foot)</strong> (/pəd̪/)</div><span class="codepoints">U+092A U+0926 U+094D U+092A U+0926</span></div><div class="subnote">Virama (्) cancels inherent /ə/ on final द्</div><div class="ruling-wrap"><svg class="ruling ruling-head-line" viewBox="0 0 680 56" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="head-line handwriting ruling"><text x="2" y="9" font-size="8" fill="#666666">Trace &amp; repeat from memory -&gt;</text><line x1="0" y1="11" x2="680" y2="11" stroke="#cdc7bc" stroke-width="0.7" stroke-dasharray="3,4"/><line x1="0" y1="20" x2="680" y2="20" stroke="#3f3c37" stroke-width="1.35"/><line x1="0" y1="40" x2="680" y2="40" stroke="#a8a297" stroke-width="0.85" stroke-dasharray="4,3"/><line x1="0" y1="51" x2="680" y2="51" stroke="#d0cbc1" stroke-width="0.8"/><text x="8" y="39" font-size="21" fill="#c8c4bc">पद् / पद   पद् / पद   पद् / पद</text></svg></div></section>
+  <footer class="protocol-footer"><strong>Six-Step Notebook Session Protocol (15-20 min baseline):</strong><div class="protocol-grid"><div><strong>1. warm up (15%):</strong> Write baseline strokes, curves, or radicals slowly with focus on proportion.</div><div><strong>2. copying (25%):</strong> Copy a short canonical line or glyph sequence attentively onto physical paper.</div><div><strong>3. memory rewrite (20%):</strong> Cover the exemplar and rewrite the target sequence from visual-motor recall.</div><div><strong>4. observation (15%):</strong> Annotate recurring graphemes, diacritics, positional allographs, or roots.</div><div><strong>5. composition (15%):</strong> Write one original variation, word recombination, or script adaptation.</div><div><strong>6. reflection (10%):</strong> Record one concise note on friction, legibility, or sound-sign mapping.</div></div></footer>
+</main>
+</body>
+</html>

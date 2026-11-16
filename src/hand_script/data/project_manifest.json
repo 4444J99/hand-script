@@ -1,0 +1,295 @@
+{
+  "schema": "hand-script.manifest/1",
+  "project": "hand-script",
+  "description": "Source threads, imported documents, archival gaps, and implemented modules for the hand-script handwriting-practice and script-learning project. Separated from 4444J99/chaucer on 2026-11-15.",
+  "space": {
+    "platform": "perplexity",
+    "id": "053d129c-8941-4aa7-8dde-61aede81813d",
+    "slug": "hand-script-BT0SnIlBSqeN3mGu3oGBPQ",
+    "role": "owner space"
+  },
+  "related_repositories": [
+    {
+      "repo": "4444J99/chaucer",
+      "boundary": "Middle English phonology, final -e scansion, and Canterbury Tales corpus tooling (formerly named hand-script until 2026-11-15)"
+    },
+    {
+      "repo": "4444J99/journal-handwritten-web",
+      "boundary": "Private handwritten poetry archive, transcription studio, and editorial review overlays"
+    },
+    {
+      "repo": "4444J99/versforms",
+      "boundary": "Restricted public reader for approved handwritten poem snapshots"
+    }
+  ],
+  "threads": [
+    {
+      "id": "5e65736a-3dc6-4889-b78b-b741a0813280",
+      "manifest_id": "HS-T006",
+      "platform": "perplexity",
+      "date": "2026-01-04",
+      "title": "Name the different alphabets",
+      "turns": 6,
+      "preservation_report": "preservation/HS-T006-preservation-report.md",
+      "report_sha256": "cd16cde0895295ac2e5ee5a993a07d0d7d8dc4c6ad56f04d220c8908ca38b538",
+      "scope_relevance": "core",
+      "notes": "Writing-system typology, logographic vs alphabetic continuum, Pimentel et al. (2021) attention-based logography metric, Maya animated logographs."
+    },
+    {
+      "id": "021ebcdc-1d87-4e2d-a339-e4d4e70ecc2a",
+      "manifest_id": "HS-T003",
+      "platform": "perplexity",
+      "date": "2026-01-04",
+      "title": "How many simultaneous scripts can be learned?",
+      "turns": 2,
+      "preservation_report": "preservation/HS-T003-preservation-report.md",
+      "report_sha256": "3e42207775a11010c90601e3f59597d0ac3ba103f74b40e79118db3f7c7db363",
+      "scope_relevance": "core",
+      "notes": "No fixed empirical ceiling; working-memory and orthographic-similarity interference govern concurrent acquisition; numerical limits are marked speculative."
+    },
+    {
+      "id": "8731a6a7-2f3c-4faf-957c-48f14c3792ce",
+      "manifest_id": "HS-T001",
+      "platform": "perplexity",
+      "date": "2026-01-16",
+      "title": "Research digital/analog resources for learning alphabets/characters",
+      "turns": 1,
+      "preservation_report": "preservation/HS-T001-preservation-report.md",
+      "report_sha256": "1945c68214cc5e6e404dfaa950ef5a424d0dde9e6e4c8cb46d9b2209089c2fa6",
+      "scope_relevance": "supporting",
+      "notes": "Survey of multisensory, digital, and analog character-learning tools across Cyrillic, Arabic, Japanese, and early literacy."
+    },
+    {
+      "id": "2b738e12-f550-46e3-b1ce-8466bd70644b",
+      "manifest_id": "HS-T004",
+      "platform": "perplexity",
+      "date": "2026-01-16",
+      "title": "Roots and stems of all languages, Ancient Greek and Latin, plus parallel alphabets",
+      "turns": 1,
+      "preservation_report": "preservation/HS-T004-preservation-report.md",
+      "report_sha256": "35feb5915a42965911e2a48b00adc867651e122343646874c74fde3e11608edc",
+      "scope_relevance": "core",
+      "notes": "Precursor report on PIE and Latin roots plus six scripts (Greek, Hebrew, Arabic, Kanji, Cyrillic, Latin)."
+    },
+    {
+      "id": "3b98b8a1-6241-4e0f-a7d8-877a2187cd0e",
+      "manifest_id": "HS-T007",
+      "platform": "perplexity",
+      "date": "2026-01-16",
+      "title": "Exhaustive list of canonical linguistic texts (Overview and Important Caveats)",
+      "turns": 1,
+      "preservation_report": "preservation/HS-T007-preservation-report.md",
+      "report_sha256": "7c7654ff6239897e68c44e1e1a8d0791a98e8568e17d4d04c9292697678f766d",
+      "scope_relevance": "core",
+      "notes": "Surviving structured linguistics meta-canon across subfields with historical, regional, and institutional caveats."
+    },
+    {
+      "id": "0a7dad6d-8f2f-4c64-8b80-6279521a4194",
+      "manifest_id": "HS-T002",
+      "platform": "perplexity",
+      "date": "2026-01-16",
+      "title": "Exhaustive list of canonical linguistic texts broken into undergrad, graduate, and dissertation levels",
+      "turns": 1,
+      "preservation_report": "preservation/HS-T002-preservation-report.md",
+      "report_sha256": "2de4fa3ab533abb2c8144e960e216988b5836b459aac224ae6422d85e6153a4f",
+      "scope_relevance": "supporting",
+      "notes": "Preserves degree-stage outline (undergrad, MA, PhD, 16 dissertation subfields); claimed 4,000-reference attachment was never exported."
+    },
+    {
+      "id": "4826f815-927a-41d6-9311-15a903f09d3f",
+      "manifest_id": "HS-T005",
+      "platform": "perplexity",
+      "date": "2026-01-16",
+      "title": "Learn via handwriting practice the roots and stems of languages with canonical founding texts",
+      "turns": 7,
+      "preservation_report": "preservation/HS-T005-preservation-report.md",
+      "report_sha256": "c2de710936b0267f56b7b344d2e5d25bbd2ba5d1dabd4885391e3c0a480631b1",
+      "scope_relevance": "core",
+      "notes": "Expands scope across 9 language families and founding texts; claims 18 languages (16 named in Turn 6 list) and 8 starter files that were never exported. Cited in 4444J99/chaucer with variant segment 8947."
+    },
+    {
+      "id": "1a777f46-6379-406e-99ac-f2c52c318db2",
+      "manifest_id": null,
+      "platform": "perplexity",
+      "date": "2026-11-09",
+      "title": "Update Project Status Summary",
+      "turns": 2,
+      "preservation_report": null,
+      "report_sha256": null,
+      "scope_relevance": "supporting",
+      "notes": "Rewrote Space status summary from inside-project threads only after rejecting cross-project contamination."
+    },
+    {
+      "id": "f8bea787-e8b8-4563-b097-13af78d4432d",
+      "manifest_id": "HS-T008",
+      "platform": "perplexity",
+      "date": "2026-11-09",
+      "title": "Create an annotated project manifest",
+      "turns": 1,
+      "preservation_report": null,
+      "report_sha256": null,
+      "scope_relevance": "supporting",
+      "notes": "Initial HS-M001 manifest design."
+    },
+    {
+      "id": "e6f00320-1b27-4632-b192-39603e8c97cc",
+      "manifest_id": "HS-M001",
+      "platform": "perplexity",
+      "date": "2026-11-09",
+      "title": "Add Remaining Uninspected Files",
+      "turns": 2,
+      "preservation_report": "docs/perplexity/HS-M001-project-manifest.md",
+      "report_sha256": "01fbf635bf874cff4918849cd87a28b61e67f01cc6e52f1d8cc5e15da1614634",
+      "scope_relevance": "core",
+      "notes": "Produced HS-M001 v0.2 and v0.3 plus turn-by-turn preservation reports HS-A003 through HS-A013."
+    },
+    {
+      "id": "3377c206-3254-470b-8ac6-261610f98aa9",
+      "manifest_id": null,
+      "platform": "perplexity",
+      "date": "2026-11-09",
+      "title": "Review versforms, journal-handwritten-web, and Writing the World's Scripts Through 100 Poems",
+      "turns": 2,
+      "preservation_report": null,
+      "report_sha256": null,
+      "scope_relevance": "core",
+      "notes": "Establishes orthogonal version-bound script renderings, explicit transformation invariants, observable learning milestones, and separated permission gates."
+    },
+    {
+      "id": "3100b354-fb39-4076-943c-df6744522fa0",
+      "manifest_id": null,
+      "platform": "perplexity",
+      "date": "2026-11-10",
+      "title": "Alignment of added ChatGPT exports and religious/literary text connections",
+      "turns": 3,
+      "preservation_report": null,
+      "report_sha256": null,
+      "scope_relevance": "core",
+      "notes": "Distinguishes kanji-first owner instinct from Greek-first notebook sequence, small daily practice from broad curriculum, and cognates from textual translation/interpretation."
+    }
+  ],
+  "external_exports": [
+    {
+      "manifest_id": "HS-T009",
+      "platform": "chatgpt",
+      "date": "2026-01-03",
+      "title": "Languages with Unique Scripts (main)",
+      "turns": 26,
+      "preservation_report": "preservation/HS-T009-preservation-report.md",
+      "report_sha256": "a5123ac42650a76094c9d8c5752ca4cebefeda89e07568701337871ef0754795",
+      "scope_relevance": "core",
+      "notes": "Script-regime cognitive matrix, owner kanji-first instinct, 4-layer stack (Latin, Cyrillic, Arabic, Kanji), literary lineages, and turns 24-26 authoring the Notebook Practice PDFs."
+    },
+    {
+      "manifest_id": "HS-T010",
+      "platform": "chatgpt",
+      "date": "2026-01-28",
+      "title": "Languages with Unique Scripts (branch)",
+      "turns": 23,
+      "preservation_report": "preservation/HS-T010-preservation-report.md",
+      "report_sha256": "7550b09d26dc18b04e5c3a8ffd0d7f9495e66beba6a25323ba9cda05aeed5e10",
+      "scope_relevance": "adjacent",
+      "notes": "Turns 1-22 identical to HS-T009; turn 23 defines multi-org GitHub governance protocols."
+    },
+    {
+      "manifest_id": "HS-T011",
+      "platform": "chatgpt",
+      "date": "2025-04-09",
+      "title": "Daily Folder Snapshot Guide",
+      "turns": 30,
+      "preservation_report": "preservation/HS-T011-preservation-report.md",
+      "report_sha256": "abb234bbe0ffe494058d4cbb0f32e94d6288c9e1ffbbc65d52b5af7931686dc1",
+      "scope_relevance": "off-topic",
+      "notes": "ET4L/BLOOM folder snapshot logging system; preserved in Space inventory but outside script-learning scope."
+    }
+  ],
+  "imported_documents": [
+    {
+      "id": "HS-M001-manifest",
+      "path": "docs/perplexity/HS-M001-project-manifest.md",
+      "sha256": "01fbf635bf874cff4918849cd87a28b61e67f01cc6e52f1d8cc5e15da1614634"
+    },
+    {
+      "id": "HS-M001-inventory",
+      "path": "docs/perplexity/HS-M001-inventory.json",
+      "sha256": "14a277acdb60a2d2a80b3a288ae83a80e5b072f6ac92858740dfa1c69f193884"
+    },
+    {
+      "id": "HS-A003-notebook-protocol",
+      "path": "docs/perplexity/HS-F001-F002-preservation-report.md",
+      "sha256": "aa97c2846bb92a6368ed34eaa6d293e16bc8a8d174992669929ecd5465f1f5a0"
+    }
+  ],
+  "unrecovered_claims": [
+    {
+      "source": "HS-T002",
+      "claimed_artifact": "Exhaustive canonical linguistics document with 4,000+ references",
+      "status": "unexported",
+      "mitigation": "HS-T007 structured meta-canon is used instead, with explicit scope caveats."
+    },
+    {
+      "source": "HS-T005",
+      "claimed_artifact": "Eight starter files (complete_polyglot_system.md, 30-day-starter-pack.md, daily-practice-template.md, etc.)",
+      "status": "unexported",
+      "mitigation": "Replaced by inspectable JSON registries and deterministic HTML practice sheets in this repository."
+    },
+    {
+      "source": "HS-T005",
+      "claimed_artifact": "18 languages across 9 families and Russian noga from PIE *ped-",
+      "status": "audited-corrected",
+      "mitigation": "Turn 6 names 16 languages (6+2+2+1+1+1+1+1+1); Russian noga is from Proto-Slavic *noga (not PIE *ped-, which yields Russian pesij/pod). Both corrections are recorded in data registries."
+    }
+  ],
+  "components": [
+    {
+      "name": "source-thread and provenance manifest",
+      "module": "hand_script.manifest",
+      "status": "implemented"
+    },
+    {
+      "name": "writing-system typology, glyph inventory, and interference analyzer",
+      "module": "hand_script.scripts",
+      "status": "implemented"
+    },
+    {
+      "name": "Unicode codepoint, combining-mark, and bidi inspector",
+      "module": "hand_script.unicode_inspect",
+      "status": "implemented"
+    },
+    {
+      "name": "comparative language map and staged linguistics meta-canon",
+      "module": "hand_script.curriculum",
+      "status": "implemented"
+    },
+    {
+      "name": "relationship-labeled lexical and textual network",
+      "module": "hand_script.etymology",
+      "status": "implemented"
+    },
+    {
+      "name": "6-step notebook practice protocol, milestones, and session log",
+      "module": "hand_script.notebook",
+      "status": "implemented"
+    },
+    {
+      "name": "version-bound script rendering and clearance validator",
+      "module": "hand_script.renderings",
+      "status": "implemented"
+    },
+    {
+      "name": "printable multi-script handwriting sheets (four-line, RTL abjad, head-line, square-grid)",
+      "module": "hand_script.practice",
+      "status": "implemented"
+    },
+    {
+      "name": "self-contained HTML comparative script and network atlas",
+      "module": "hand_script.atlas",
+      "status": "implemented"
+    },
+    {
+      "name": "custom handwriting font compilation pipeline",
+      "module": null,
+      "status": "not started"
+    }
+  ]
+}

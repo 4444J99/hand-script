@@ -1,0 +1,22 @@
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+src/*.egg-info/
+
+# Environments
+.venv/
+venv/
+ENV/
+
+# OS / editor
+.DS_Store
+*.swp

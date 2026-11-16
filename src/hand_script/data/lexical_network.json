@@ -1,0 +1,201 @@
+{
+  "schema": "hand-script.lexical-network/1",
+  "design_rule": "Every cross-word or cross-passage connection must declare an explicit relation type from {cognate, word_formation, borrowing, translation, interpretation, comparison}. 'cognate' edges are restricted to items sharing an established language family; cross-family links must use translation, borrowing, interpretation, or comparison.",
+  "nodes": [
+    {"id": "pie-ped", "kind": "root", "family": "indo-european", "language": "proto-indo-european", "script": "latin", "form": "*ped-", "transliteration": "*ped-", "gloss": "foot; to step"},
+    {"id": "sa-pad", "kind": "lexeme", "family": "indo-european", "language": "sanskrit", "script": "devanagari", "form": "पद्", "transliteration": "pad-", "gloss": "foot; step; quarter-verse"},
+    {"id": "grc-pous", "kind": "lexeme", "family": "indo-european", "language": "ancient-greek", "script": "greek", "form": "πούς (ποδός)", "transliteration": "pous (podos)", "gloss": "foot"},
+    {"id": "la-pes", "kind": "lexeme", "family": "indo-european", "language": "latin", "script": "latin", "form": "pēs (pedis)", "transliteration": "pes (pedis)", "gloss": "foot; metrical foot"},
+    {"id": "ang-fot", "kind": "lexeme", "family": "indo-european", "language": "old-english", "script": "latin", "form": "fōt", "transliteration": "fot", "gloss": "foot (Grimm's Law *p > f, *d > t)"},
+    {"id": "ru-peshij", "kind": "lexeme", "family": "indo-european", "language": "russian", "script": "cyrillic", "form": "пеший", "transliteration": "peshij", "gloss": "on foot, pedestrian (true Slavic reflex of *ped-; contrast нога from *noga)"},
+    {"id": "ru-noga", "kind": "lexeme", "family": "indo-european", "language": "russian", "script": "cyrillic", "form": "нога", "transliteration": "noga", "gloss": "foot, leg (from Proto-Slavic *noga 'claw/hoof', NOT from *ped-; corrects HS-T005 Turn 3)"},
+    {"id": "lzh-zu", "kind": "lexeme", "family": "sino-tibetan", "language": "classical-chinese", "script": "kanji", "form": "足", "transliteration": "zu", "gloss": "foot; to suffice"},
+    {"id": "jpn-ashi", "kind": "lexeme", "family": "japonic", "language": "japanese", "script": "kanji", "form": "足", "transliteration": "ashi / tariru", "gloss": "foot, leg; to be sufficient (Kojiki / modern kanji usage)"},
+    {"id": "fi-jalka", "kind": "lexeme", "family": "uralic", "language": "finnish", "script": "latin", "form": "jalka", "transliteration": "jalka", "gloss": "foot, leg"},
+    {"id": "sw-mguu", "kind": "lexeme", "family": "niger-congo", "language": "swahili", "script": "latin", "form": "mguu", "transliteration": "mguu", "gloss": "foot, leg (class 3/4 m-/mi-)"},
+    {"id": "tr-ayak", "kind": "lexeme", "family": "turkic", "language": "turkish", "script": "latin", "form": "ayak", "transliteration": "ayak", "gloss": "foot"},
+    {"id": "nci-icxitl", "kind": "lexeme", "family": "uto-aztecan", "language": "classical-nahuatl", "script": "latin", "form": "icxitl", "transliteration": "icxitl", "gloss": "foot (absolutive -tl)"},
+
+    {"id": "sem-slm", "kind": "root", "family": "afroasiatic", "language": "proto-semitic", "script": "latin", "form": "*š-l-m", "transliteration": "*s-l-m", "gloss": "wholeness, soundness, peace"},
+    {"id": "he-shalom", "kind": "lexeme", "family": "afroasiatic", "language": "hebrew", "script": "hebrew", "form": "שָׁלוֹם", "transliteration": "shalom", "gloss": "completeness, welfare, peace"},
+    {"id": "ar-salam", "kind": "lexeme", "family": "afroasiatic", "language": "arabic", "script": "arabic", "form": "سَلَام", "transliteration": "salam", "gloss": "peace, safety, soundness"},
+    {"id": "grc-eirene", "kind": "lexeme", "family": "indo-european", "language": "ancient-greek", "script": "greek", "form": "εἰρήνη", "transliteration": "eirene", "gloss": "peace (primary Septuagint rendering of shalom, not a cognate)"},
+    {"id": "grc-soteria", "kind": "lexeme", "family": "indo-european", "language": "ancient-greek", "script": "greek", "form": "σωτηρία", "transliteration": "soteria", "gloss": "deliverance, safety, salvation (contextual Septuagint rendering of shalom)"},
+    {"id": "la-pax", "kind": "lexeme", "family": "indo-european", "language": "latin", "script": "latin", "form": "pāx", "transliteration": "pax", "gloss": "compact, peace (Vulgate rendering of eirene/shalom; PIE *pak- 'fasten')"},
+
+    {"id": "he-dabar", "kind": "lexeme", "family": "afroasiatic", "language": "hebrew", "script": "hebrew", "form": "דָּבָר", "transliteration": "dabar", "gloss": "word, speech, matter, thing (root ד-ב-ר)"},
+    {"id": "grc-logos", "kind": "lexeme", "family": "indo-european", "language": "ancient-greek", "script": "greek", "form": "λόγος", "transliteration": "logos", "gloss": "speech, account, ratio, word (PIE *leg- 'collect, speak')"},
+    {"id": "la-verbum", "kind": "lexeme", "family": "indo-european", "language": "latin", "script": "latin", "form": "verbum", "transliteration": "verbum", "gloss": "word (PIE *werdh-, cognate with English 'word')"},
+    {"id": "lzh-dao", "kind": "lexeme", "family": "sino-tibetan", "language": "classical-chinese", "script": "kanji", "form": "道", "transliteration": "dao", "gloss": "way, path; to speak/guide (Dao De Jing 1; modern Chinese versions of John 1:1 also render logos as 道)"},
+
+    {"id": "sem-ktb", "kind": "root", "family": "afroasiatic", "language": "proto-semitic", "script": "latin", "form": "*k-t-b", "transliteration": "*k-t-b", "gloss": "to write, inscribe"},
+    {"id": "he-katav", "kind": "lexeme", "family": "afroasiatic", "language": "hebrew", "script": "hebrew", "form": "כָּתַב", "transliteration": "katav", "gloss": "he wrote"},
+    {"id": "he-ktav", "kind": "lexeme", "family": "afroasiatic", "language": "hebrew", "script": "hebrew", "form": "כְּתָב", "transliteration": "ktav", "gloss": "script, writing, handwriting"},
+    {"id": "ar-kataba", "kind": "lexeme", "family": "afroasiatic", "language": "arabic", "script": "arabic", "form": "كَتَبَ", "transliteration": "kataba", "gloss": "he wrote; prescribed"},
+    {"id": "ar-kitab", "kind": "lexeme", "family": "afroasiatic", "language": "arabic", "script": "arabic", "form": "كِتَاب", "transliteration": "kitab", "gloss": "book, scripture"},
+    {"id": "grc-grapho", "kind": "lexeme", "family": "indo-european", "language": "ancient-greek", "script": "greek", "form": "γράφω", "transliteration": "grapho", "gloss": "scratch, draw, write (PIE *gerbh-)"},
+    {"id": "grc-gramma", "kind": "lexeme", "family": "indo-european", "language": "ancient-greek", "script": "greek", "form": "γράμμα", "transliteration": "gramma", "gloss": "drawn character, letter, written text"},
+    {"id": "la-scribo", "kind": "lexeme", "family": "indo-european", "language": "latin", "script": "latin", "form": "scrībō", "transliteration": "scribo", "gloss": "write, draw lines (PIE *skreybh-)"},
+    {"id": "lzh-shu", "kind": "lexeme", "family": "sino-tibetan", "language": "classical-chinese", "script": "kanji", "form": "書", "transliteration": "shu", "gloss": "write, calligraphy, book (brush-hand radical 聿)"},
+
+    {"id": "lzh-mu", "kind": "lexeme", "family": "sino-tibetan", "language": "classical-chinese", "script": "kanji", "form": "木", "transliteration": "mu", "gloss": "tree, wood (Kangxi radical 75)"},
+    {"id": "lzh-ben", "kind": "lexeme", "family": "sino-tibetan", "language": "classical-chinese", "script": "kanji", "form": "本", "transliteration": "ben", "gloss": "root, trunk base, origin (indicative stroke at base of 木)"},
+    {"id": "lzh-lin", "kind": "lexeme", "family": "sino-tibetan", "language": "classical-chinese", "script": "kanji", "form": "林", "transliteration": "lin", "gloss": "grove, woods (reduplicated 木)"},
+    {"id": "lzh-sen", "kind": "lexeme", "family": "sino-tibetan", "language": "classical-chinese", "script": "kanji", "form": "森", "transliteration": "sen", "gloss": "deep forest (triplicated 木)"},
+    {"id": "jpn-mori", "kind": "lexeme", "family": "japonic", "language": "japanese", "script": "kanji", "form": "森", "transliteration": "mori / shin", "gloss": "forest, shrine woods (graphic + on'yomi borrowing paired with native kun'yomi mori)"}
+  ],
+  "clusters": [
+    {
+      "id": "foot-step",
+      "title": "Foot and Stepping (PIE Cognates vs Cross-Family Non-Cognates)",
+      "summary": "Contrasts genuine Indo-European sound-change reflexes of *ped- against unrelated words in five other families, and corrects the archive's earlier Russian noga error."
+    },
+    {
+      "id": "peace-wholeness",
+      "title": "Peace and Wholeness (Semitic Cognates vs Septuagint/Vulgate Translation)",
+      "summary": "Separates inherited Semitic cognates (Hebrew shalom / Arabic salam) from textual translation choices into Greek (eirene, soteria) and Latin (pax)."
+    },
+    {
+      "id": "word-speech-way",
+      "title": "Word, Account, and Way (Biblical and Classical Translation Chain)",
+      "summary": "Traces Psalm 33:6 and John 1:1 across Hebrew dabar, Greek logos, Latin verbum, and Chinese dao without collapsing them into a fake shared root."
+    },
+    {
+      "id": "write-script-book",
+      "title": "Writing, Letterform, and Book",
+      "summary": "Compares Semitic trilateral root pattern (*k-t-b -> katav/ktav, kataba/kitab) with Greek grapho/gramma, Latin scribo, and Chinese brush-based shu."
+    },
+    {
+      "id": "tree-root-radical",
+      "title": "Tree, Root, and Compositional Radicals",
+      "summary": "Demonstrates morphographic character composition from radical 木 (tree) into 本 (root), 林 (grove), and 森 (forest) and Sinospheric graphic borrowing into Japanese."
+    }
+  ],
+  "edges": [
+    {"cluster": "foot-step", "source": "pie-ped", "target": "sa-pad", "relation": "cognate", "evidence": "Inherited Indo-Iranian reflex preserving initial *p- and dental stop."},
+    {"cluster": "foot-step", "source": "pie-ped", "target": "grc-pous", "relation": "cognate", "evidence": "Inherited Hellenic o-grade nominative pous, oblique stem pod-."},
+    {"cluster": "foot-step", "source": "pie-ped", "target": "la-pes", "relation": "cognate", "evidence": "Inherited Italic e-grade nominative pes, oblique stem ped-."},
+    {"cluster": "foot-step", "source": "pie-ped", "target": "ang-fot", "relation": "cognate", "evidence": "Germanic lengthened o-grade with Grimm's Law (*p > f, *d > t)."},
+    {"cluster": "foot-step", "source": "pie-ped", "target": "ru-peshij", "relation": "cognate", "evidence": "Inherited Balto-Slavic derivative (*ped-sjo- > peshij 'on foot')."},
+    {"cluster": "foot-step", "source": "ru-peshij", "target": "ru-noga", "relation": "comparison", "evidence": "Lexical replacement within Slavic: noga descends from *noga ('claw/unguis'), not *ped-."},
+    {"cluster": "foot-step", "source": "lzh-zu", "target": "jpn-ashi", "relation": "borrowing", "evidence": "Orthographic adoption of Han character 足 to write native Japanese word ashi / tariru."},
+    {"cluster": "foot-step", "source": "pie-ped", "target": "lzh-zu", "relation": "comparison", "evidence": "Unrelated Sino-Tibetan morphograph pairing 'foot' with 'sufficiency'."},
+    {"cluster": "foot-step", "source": "pie-ped", "target": "fi-jalka", "relation": "comparison", "evidence": "Unrelated Uralic lexeme covering both foot and leg."},
+    {"cluster": "foot-step", "source": "pie-ped", "target": "sw-mguu", "relation": "comparison", "evidence": "Unrelated Bantu noun-class 3/4 lexeme."},
+    {"cluster": "foot-step", "source": "pie-ped", "target": "tr-ayak", "relation": "comparison", "evidence": "Unrelated Turkic lexeme (*hadak > ayak)."},
+    {"cluster": "foot-step", "source": "pie-ped", "target": "nci-icxitl", "relation": "comparison", "evidence": "Unrelated Uto-Aztecan noun with absolutive suffix -tl."},
+
+    {"cluster": "peace-wholeness", "source": "sem-slm", "target": "he-shalom", "relation": "cognate", "evidence": "Northwest Semitic reflex (*š > sh, Canaanite shift *ā > ō)."},
+    {"cluster": "peace-wholeness", "source": "sem-slm", "target": "ar-salam", "relation": "cognate", "evidence": "Central Semitic reflex (*š > s, preserved long ā)."},
+    {"cluster": "peace-wholeness", "source": "he-shalom", "target": "grc-eirene", "relation": "translation", "passage": "Septuagint (passim, e.g. Numbers 6:26)", "evidence": "Standard Greek translation choice for Hebrew shalom; unrelated Indo-European etymology."},
+    {"cluster": "peace-wholeness", "source": "he-shalom", "target": "grc-soteria", "relation": "translation", "passage": "Septuagint (selected passages, e.g. Genesis 26:31 / 28:21)", "evidence": "Shows translation is passage-sensitive rather than a mechanical 1-to-1 lexical substitution."},
+    {"cluster": "peace-wholeness", "source": "grc-eirene", "target": "la-pax", "relation": "translation", "passage": "Vulgate", "evidence": "Jerome renders eirene/shalom with Latin pax ('compact/treaty peace')."},
+
+    {"cluster": "word-speech-way", "source": "he-dabar", "target": "grc-logos", "relation": "translation", "passage": "Psalm 33:6 (LXX 32:6)", "evidence": "Septuagint renders Hebrew dabar ('word/speech/matter') with Greek logos."},
+    {"cluster": "word-speech-way", "source": "grc-logos", "target": "la-verbum", "relation": "translation", "passage": "John 1:1 (Vulgate)", "evidence": "Vulgate narrows polysemous Greek logos ('speech/account/reason') into Latin verbum ('word')."},
+    {"cluster": "word-speech-way", "source": "grc-logos", "target": "lzh-dao", "relation": "interpretation", "passage": "John 1:1 / Dao De Jing 1", "evidence": "Chinese biblical translators chose 道 (dao) to carry the cosmic/ordering register of Johannine logos alongside its Classical sense 'to speak'."},
+
+    {"cluster": "write-script-book", "source": "sem-ktb", "target": "he-katav", "relation": "cognate", "evidence": "Inherited Semitic trilateral root *k-t-b in Qal stem."},
+    {"cluster": "write-script-book", "source": "he-katav", "target": "he-ktav", "relation": "word_formation", "evidence": "Nominal vowel-pattern derivation from כ-ת-ב meaning 'script/handwriting'."},
+    {"cluster": "write-script-book", "source": "sem-ktb", "target": "ar-kataba", "relation": "cognate", "evidence": "Inherited Semitic Form I verb kataba."},
+    {"cluster": "write-script-book", "source": "ar-kataba", "target": "ar-kitab", "relation": "word_formation", "evidence": "Fi'al nominal template on root ك-ت-ب yielding kitab ('book/writing')."},
+    {"cluster": "write-script-book", "source": "grc-grapho", "target": "grc-gramma", "relation": "word_formation", "evidence": "Resultative -ma noun from grapho ('that which is drawn/written')."},
+    {"cluster": "write-script-book", "source": "grc-grapho", "target": "la-scribo", "relation": "comparison", "evidence": "Parallel semantic shift ('scratch/incise' -> 'write') on distinct PIE roots (*gerbh- vs *skreybh-)."},
+    {"cluster": "write-script-book", "source": "ar-kitab", "target": "lzh-shu", "relation": "comparison", "evidence": "Contrasts consonantal template derivation with brush-depicting morphograph 書."},
+
+    {"cluster": "tree-root-radical", "source": "lzh-mu", "target": "lzh-ben", "relation": "word_formation", "evidence": "Indicative (zhishi) stroke added to base of 木 to denote 'root/origin'."},
+    {"cluster": "tree-root-radical", "source": "lzh-mu", "target": "lzh-lin", "relation": "word_formation", "evidence": "Compound ideograph (huiyi) pairing two 木 graphs for 'grove/woods'."},
+    {"cluster": "tree-root-radical", "source": "lzh-lin", "target": "lzh-sen", "relation": "word_formation", "evidence": "Triplicated 木 graph intensifying density to 'deep forest'."},
+    {"cluster": "tree-root-radical", "source": "lzh-sen", "target": "jpn-mori", "relation": "borrowing", "evidence": "Chinese character 森 adopted into Japanese for both Sino-Japanese reading shin and native mori."}
+  ],
+  "passages": [
+    {
+      "ref": "ILIAD.1.1",
+      "work": "Homer, Iliad 1.1",
+      "language": "ancient-greek",
+      "script": "greek",
+      "text": "Μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος",
+      "transliteration": "Mēnin aeide thea Pēlēïadeō Akhilēos",
+      "gloss": "Sing, goddess, the wrath of Peleus' son Achilles",
+      "focus_nodes": ["grc-pous", "grc-logos"],
+      "practice_note": "Polytonic Greek epic hexameter opening: note circumflex on Μῆνιν, diaeresis on Πηληϊάδεω, and word-final sigma ς."
+    },
+    {
+      "ref": "METAMORPHOSES.1.1",
+      "work": "Ovid, Metamorphoses 1.1-2",
+      "language": "latin",
+      "script": "latin",
+      "text": "In nova fert animus mutatas dicere formas corpora",
+      "transliteration": "In nova fert animus mutatas dicere formas corpora",
+      "gloss": "My mind leads me to speak of forms changed into new bodies",
+      "focus_nodes": ["la-pes", "la-scribo"],
+      "practice_note": "Classical Latin baseline hand; anchors the transformation lineage cited in HS-F001."
+    },
+    {
+      "ref": "GENESIS.1.1",
+      "work": "Genesis 1:1 (Masoretic Hebrew)",
+      "language": "hebrew",
+      "script": "hebrew",
+      "text": "בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ",
+      "transliteration": "Bereshit bara Elohim et hashamayim ve'et ha'aretz",
+      "gloss": "In the beginning God created the heavens and the earth",
+      "focus_nodes": ["he-shalom", "he-dabar"],
+      "practice_note": "Right-to-left Ktav Ashuri practice: observe final mem (ם) in אֱלֹהִים / הַשָּׁמַיִם and final tsadi (ץ) in הָאָרֶץ."
+    },
+    {
+      "ref": "FATIHA.1.1",
+      "work": "Quran 1:1 (Surah Al-Fatiha)",
+      "language": "arabic",
+      "script": "arabic",
+      "text": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+      "transliteration": "Bismi llahi r-rahmani r-rahim",
+      "gloss": "In the name of God, the Entirely Merciful, the Especially Merciful",
+      "focus_nodes": ["ar-salam", "ar-kitab"],
+      "practice_note": "Right-to-left connected rasm practice: note shared trilateral root ر-ح-م (r-h-m) across الرَّحْمَٰنِ and الرَّحِيمِ, and non-connecting ر."
+    },
+    {
+      "ref": "DAODEJING.1.1",
+      "work": "Dao De Jing 1",
+      "language": "classical-chinese",
+      "script": "kanji",
+      "text": "道可道非常道名可名非常名",
+      "transliteration": "Dao ke dao fei chang dao; ming ke ming fei chang ming",
+      "gloss": "The Way that can be spoken is not the constant Way; the name that can be named is not the constant name",
+      "focus_nodes": ["lzh-dao", "lzh-mu"],
+      "practice_note": "Tianzige square-grid character balance: observe 道 functioning sequentially as noun ('Way') and verb ('to speak')."
+    },
+    {
+      "ref": "RIGVEDA.1.1.1",
+      "work": "Rigveda 1.1.1",
+      "language": "sanskrit",
+      "script": "devanagari",
+      "text": "अग्निमीळे पुरोहितं यज्ञस्य देवमृत्विजम्",
+      "transliteration": "agnim ile purohitam yajnasya devam rtvijam",
+      "gloss": "I praise Agni, the household priest, the divine minister of the sacrifice",
+      "focus_nodes": ["sa-pad"],
+      "practice_note": "Devanagari head-line (shirorekha) practice: note pre-base placement of short-i matra (ि) in ग्नि and ृ vocalic-r hook below द."
+    },
+    {
+      "ref": "SLOVO.OPENING",
+      "work": "Slovo o polku Igoreve (opening question, modernized Cyrillic)",
+      "language": "russian",
+      "script": "cyrillic",
+      "text": "Не лепо ли ны бяшеть братие начати старыми словесы",
+      "transliteration": "Ne lepo li ny byashet bratie nachati starymi slovesy",
+      "gloss": "Might it not suit us, brothers, to begin in the old words",
+      "focus_nodes": ["ru-peshij", "ru-noga"],
+      "practice_note": "Cyrillic upright stem spacing across л, п, н, ш, т, м, ы; keep print forms distinct from connected cursive."
+    },
+    {
+      "ref": "HUNMIN.PREFACE",
+      "work": "Hunminjeongeum Eonhae (opening clause)",
+      "language": "korean",
+      "script": "hangul",
+      "text": "나랏말싸미중국에달아문자와로서르사맛디아니할쌔",
+      "transliteration": "Narat malssami Junggug-e dara munja-waro seoreu samatdi anihalssae",
+      "gloss": "Because the speech of this country differs from that of China, it does not match Chinese characters",
+      "focus_nodes": [],
+      "practice_note": "Square-grid Hangul block composition pairing vertical-vowel blocks (나, 라, 사) with horizontal-vowel blocks (중, 국, 문, 르)."
+    }
+  ]
+}

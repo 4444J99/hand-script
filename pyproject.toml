@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hand-script"
+version = "0.1.0"
+description = "Handwriting practice, writing-system typology, relationship-labeled lexical study, and script-learning sheets"
+readme = "README.md"
+requires-python = ">=3.11"
+# LICENSE is an owner decision (see README). Until the owner chooses, no
+# license is granted and the package is not to be redistributed.
+license = { text = "Proprietary - owner decision pending" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+hand-script = "hand_script.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hand_script"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003"]
