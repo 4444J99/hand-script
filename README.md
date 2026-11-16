@@ -29,3 +29,11 @@ PYTHONPATH=src python3 -m hand_script log summary
 ```
 
 Tests: `PYTHONPATH=src python3 -m unittest discover -s tests`.
+
+Weekly packet (progress summary from the log + 7 days of drills graded by minutes logged:
+under 60 min trace, under 180 copy, then recall from name and sound; day 7 reviews the week):
+
+```bash
+PYTHONPATH=src python3 -m hand_script packet greek --out packets
+PYTHONPATH=src python3 -m hand_script packet all --date 2026-11-18
+```
