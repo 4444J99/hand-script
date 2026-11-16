@@ -55,6 +55,13 @@ def _drill_row(item: dict, level: int, rtl: bool) -> str:
             f'<div class="cells{" rtl" if rtl else ""}">{cells}</div></div>')
 
 
+def _answer_key(items: list[dict], rtl: bool) -> str:
+    """Level 3 hides the models, so print a small key to check against afterwards."""
+    chars = " &nbsp; ".join(escape(i["form"]) for i in items)
+    d = ' style="direction:rtl;text-align:right"' if rtl else ""
+    return f'<div class="sub"{d}>Check against: <span class="key">{chars}</span></div>'
+
+
 def packet(script: dict, entries: list[dict], today: date) -> str:
     sid = script["id"]
     mine = [e for e in entries if e["script"] == sid]
@@ -83,11 +90,12 @@ def packet(script: dict, entries: list[dict], today: date) -> str:
         parts.append(
             f'<section class="day"><h2>{title}</h2>'
             + "".join(_drill_row(i, level, rtl) for i in items)
+            + (_answer_key(items, rtl) if level == 3 else "")
             + f'<div class="copy"><div class="src">Copy line: {escape(c["source"])}</div>'
               f'<div class="line model dark"{style}>{text}</div><div class="line"></div></div>'
               '<div class="sub">&#9744; done &nbsp; minutes ____</div></section>'
         )
-    css_extra = ("<style>.sum{font-size:9pt;background:#f4f4f4;padding:2mm}"
+    css_extra = ("<style>.key{font-size:16pt;color:#555}.sum{font-size:9pt;background:#f4f4f4;padding:2mm}"
                  ".day{page-break-before:always}.day h2{font-size:13pt;margin:0 0 2mm}</style>")
     page = sheets._page(f'{script["name"]} weekly packet', "".join(parts), script["direction"], script["font"])
     return page.replace("</head>", css_extra + "</head>", 1)
