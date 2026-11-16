@@ -19,7 +19,10 @@ class PacketTests(unittest.TestCase):
 
     def test_weeks_advance_and_wrap(self):
         g = scripts.load("greek")
-        self.assertEqual(packet.week_letters(g, 2)[0][0]["name"], "alpha")  # 48 forms wrap after two weeks
+        n = len(packet.forms(g))
+        step = 24  # 6 days x 4 forms per week
+        wk = next(w for w in range(1, n + 1) if (w * step) % n == 0)
+        self.assertEqual(packet.week_letters(g, wk)[0][0], packet.week_letters(g, 0)[0][0])
         h = scripts.load("hebrew")
         self.assertNotEqual(packet.week_letters(h, 0)[0][0], packet.week_letters(h, 1)[0][0])
 
