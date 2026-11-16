@@ -31,6 +31,15 @@ class SheetTests(unittest.TestCase):
         self.assertIn("&lt;x&gt;", html)
         self.assertIn("α&amp;β", html)
 
+    def test_copy_lines_exact(self):
+        g = scripts.load("greek")
+        texts = [c["text"] for c in g["copy_lines"]]
+        self.assertIn("μηνιν αειδε θεα Πηληιαδεω Αχιληος", texts)
+        self.assertIn("ἄνδρα μοι ἔννεπε Μοῦσα πολύτροπον ὃς μάλα πολλὰ", texts)
+        h = scripts.load("hebrew")
+        finals = {f for l in h["letters"] for f in l["practice"][1:]}
+        self.assertEqual(finals, set("ךםןףץ"))
+
     def test_unknown_script(self):
         with self.assertRaises(KeyError):
             scripts.load("nope")

@@ -1,6 +1,6 @@
 # Plan: handwriting practice sheets and practice tracker
 
-Status: slice 1 and 2 of this plan. Project scope: handwriting and learning new
+Status: slice 1 (sheets) shipped in this PR; slice 2 (tracker) pending, described below as intent. Project scope: handwriting and learning new
 scripts only. Not Chaucer (`4444J99/chaucer`), not vers.forms.
 
 ## Evidence (owner's own words, ChatGPT conversations in the knowledge library)

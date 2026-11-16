@@ -183,7 +183,8 @@
    "sound": "s (ς at word end)",
    "practice": [
     "Σ",
-    "σ"
+    "σ",
+    "ς"
    ]
   },
   {
@@ -255,12 +256,12 @@
   },
   {
    "source": "Iliad 1.1 (plain)",
-   "text": "μηνιν αειδε θεα Πηληιαδεω Αχιλεος",
+   "text": "μηνιν αειδε θεα Πηληιαδεω Αχιληος",
    "gloss": "same line without diacritics, for first passes"
   },
   {
-   "source": "Odyssey 1.1",
-   "text": "ἄνδρα μοι ἔννεπε Μοῦσα πολύτροπον ὃς μάλα πολλά",
+   "source": "Odyssey 1.1 (opening)",
+   "text": "ἄνδρα μοι ἔννεπε Μοῦσα πολύτροπον ὃς μάλα πολλὰ",
    "gloss": "Tell me, Muse, of the man of many turns"
   }
  ]
