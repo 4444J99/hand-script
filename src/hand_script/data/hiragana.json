@@ -1,0 +1,431 @@
+{
+ "id": "hiragana",
+ "name": "Hiragana",
+ "direction": "ltr",
+ "order": 9,
+ "font": "'Hiragino Mincho ProN','Hiragino Sans',serif",
+ "reason": "Kana: the basic 46 syllables, then Japanese reading",
+ "letters": [
+  {
+   "upper": "",
+   "lower": "あ",
+   "name": "a",
+   "sound": "a",
+   "practice": [
+    "あ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "い",
+   "name": "i",
+   "sound": "i",
+   "practice": [
+    "い"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "う",
+   "name": "u",
+   "sound": "u",
+   "practice": [
+    "う"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "え",
+   "name": "e",
+   "sound": "e",
+   "practice": [
+    "え"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "お",
+   "name": "o",
+   "sound": "o",
+   "practice": [
+    "お"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "か",
+   "name": "ka",
+   "sound": "ka",
+   "practice": [
+    "か"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "き",
+   "name": "ki",
+   "sound": "ki",
+   "practice": [
+    "き"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "く",
+   "name": "ku",
+   "sound": "ku",
+   "practice": [
+    "く"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "け",
+   "name": "ke",
+   "sound": "ke",
+   "practice": [
+    "け"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "こ",
+   "name": "ko",
+   "sound": "ko",
+   "practice": [
+    "こ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "さ",
+   "name": "sa",
+   "sound": "sa",
+   "practice": [
+    "さ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "し",
+   "name": "shi",
+   "sound": "shi",
+   "practice": [
+    "し"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "す",
+   "name": "su",
+   "sound": "su",
+   "practice": [
+    "す"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "せ",
+   "name": "se",
+   "sound": "se",
+   "practice": [
+    "せ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "そ",
+   "name": "so",
+   "sound": "so",
+   "practice": [
+    "そ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "た",
+   "name": "ta",
+   "sound": "ta",
+   "practice": [
+    "た"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ち",
+   "name": "chi",
+   "sound": "chi",
+   "practice": [
+    "ち"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "つ",
+   "name": "tsu",
+   "sound": "tsu",
+   "practice": [
+    "つ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "て",
+   "name": "te",
+   "sound": "te",
+   "practice": [
+    "て"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "と",
+   "name": "to",
+   "sound": "to",
+   "practice": [
+    "と"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "な",
+   "name": "na",
+   "sound": "na",
+   "practice": [
+    "な"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "に",
+   "name": "ni",
+   "sound": "ni",
+   "practice": [
+    "に"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ぬ",
+   "name": "nu",
+   "sound": "nu",
+   "practice": [
+    "ぬ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ね",
+   "name": "ne",
+   "sound": "ne",
+   "practice": [
+    "ね"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "の",
+   "name": "no",
+   "sound": "no",
+   "practice": [
+    "の"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "は",
+   "name": "ha",
+   "sound": "ha",
+   "practice": [
+    "は"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ひ",
+   "name": "hi",
+   "sound": "hi",
+   "practice": [
+    "ひ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ふ",
+   "name": "fu",
+   "sound": "fu",
+   "practice": [
+    "ふ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "へ",
+   "name": "he",
+   "sound": "he",
+   "practice": [
+    "へ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ほ",
+   "name": "ho",
+   "sound": "ho",
+   "practice": [
+    "ほ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ま",
+   "name": "ma",
+   "sound": "ma",
+   "practice": [
+    "ま"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "み",
+   "name": "mi",
+   "sound": "mi",
+   "practice": [
+    "み"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "む",
+   "name": "mu",
+   "sound": "mu",
+   "practice": [
+    "む"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "め",
+   "name": "me",
+   "sound": "me",
+   "practice": [
+    "め"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "も",
+   "name": "mo",
+   "sound": "mo",
+   "practice": [
+    "も"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "や",
+   "name": "ya",
+   "sound": "ya",
+   "practice": [
+    "や"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ゆ",
+   "name": "yu",
+   "sound": "yu",
+   "practice": [
+    "ゆ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "よ",
+   "name": "yo",
+   "sound": "yo",
+   "practice": [
+    "よ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ら",
+   "name": "ra",
+   "sound": "ra",
+   "practice": [
+    "ら"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "り",
+   "name": "ri",
+   "sound": "ri",
+   "practice": [
+    "り"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "る",
+   "name": "ru",
+   "sound": "ru",
+   "practice": [
+    "る"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "れ",
+   "name": "re",
+   "sound": "re",
+   "practice": [
+    "れ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ろ",
+   "name": "ro",
+   "sound": "ro",
+   "practice": [
+    "ろ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "わ",
+   "name": "wa",
+   "sound": "wa",
+   "practice": [
+    "わ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "を",
+   "name": "wo",
+   "sound": "wo",
+   "practice": [
+    "を"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ん",
+   "name": "n",
+   "sound": "n",
+   "practice": [
+    "ん"
+   ]
+  }
+ ],
+ "copy_lines": [
+  {
+   "source": "Iroha poem, lines 1-2 (public domain, Heian period)",
+   "text": "いろはにほへと ちりぬるを",
+   "gloss": "Though the colour is fragrant, it scatters"
+  }
+ ]
+}

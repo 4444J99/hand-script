@@ -40,6 +40,16 @@ class SheetTests(unittest.TestCase):
         finals = {f for l in h["letters"] for f in l["practice"][1:]}
         self.assertEqual(finals, set("ךםןףץ"))
 
+    def test_new_scripts_complete(self):
+        counts = {"hiragana": 46, "devanagari": 44, "arabic": 28}
+        for sid, n in counts.items():
+            d = scripts.load(sid)
+            self.assertEqual(len(d["letters"]), n, sid)
+            self.assertTrue(d["copy_lines"], sid)
+            chars = [l["lower"] for l in d["letters"]]
+            self.assertEqual(len(set(chars)), n, f"{sid} duplicates")
+        self.assertEqual(scripts.load("arabic")["direction"], "rtl")
+
     def test_unknown_script(self):
         with self.assertRaises(KeyError):
             scripts.load("nope")
@@ -48,8 +58,9 @@ class SheetTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             self.assertEqual(cli.main(["sheets", "all", "--out", d]), 0)
             names = sorted(p.name for p in Path(d).iterdir())
-            self.assertEqual(names, ["greek-copy.html", "greek-letters.html",
-                                     "hebrew-copy.html", "hebrew-letters.html"])
+            self.assertEqual(names, sorted(f"{i}-{k}.html" for i in
+                             ["arabic", "devanagari", "greek", "hebrew", "hiragana"]
+                             for k in ("copy", "letters")))
 
 
 if __name__ == "__main__":
