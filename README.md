@@ -21,4 +21,11 @@ PYTHONPATH=src python3 -m hand_script sheets all --out sheets
 Writes printable HTML (open in a browser, print A4): a letter sheet and a line-copy sheet
 per script (Greek, Hebrew so far). New script = new JSON file in `src/hand_script/data/`.
 
+Practice log (append-only `data/practice-log.jsonl`, or `--file` / `$HAND_SCRIPT_LOG`):
+
+```bash
+PYTHONPATH=src python3 -m hand_script log add greek --minutes 10 --lines 3 --characters 45 --focus "α β γ"
+PYTHONPATH=src python3 -m hand_script log summary
+```
+
 Tests: `PYTHONPATH=src python3 -m unittest discover -s tests`.

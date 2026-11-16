@@ -1,6 +1,6 @@
 # Plan: handwriting practice sheets and practice tracker
 
-Status: slice 1 (sheets) shipped in this PR; slice 2 (tracker) pending, described below as intent. Project scope: handwriting and learning new
+Status: slice 1 (sheets) shipped in PR 2; slice 2 (log CLI: `log add`, `log summary` with streaks) shipped in the follow-up PR. Project scope: handwriting and learning new
 scripts only. Not Chaucer (`4444J99/chaucer`), not vers.forms.
 
 ## Evidence (owner's own words, ChatGPT conversations in the knowledge library)
@@ -39,7 +39,7 @@ Texts for line copying are public-domain opening lines in the original script
 
 Append-only JSONL log at `data/practice-log.jsonl` (git-tracked, local only, no
 app stores). One entry per sitting: date, script, minutes, characters/lines,
-focus letters, note. `hand-script log add|summary|streak`. Summary reports minutes,
+focus letters, note. `hand-script log add|summary` (streaks are part of the summary). Summary reports minutes,
 characters, sitting days, current/longest streak, and per-script totals. Mirrors
 the owner's "minutes or characters practiced" metric and the 10-minute daily minimum.
 
