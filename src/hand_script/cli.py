@@ -5,7 +5,7 @@ import os
 from datetime import date
 from pathlib import Path
 
-from . import log, scripts, sheets
+from . import log, packet, scripts, sheets
 
 
 def cmd_sheets(args: argparse.Namespace) -> int:
@@ -40,6 +40,19 @@ def cmd_log_summary(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_packet(args: argparse.Namespace) -> int:
+    ids = scripts.available() if args.script == "all" else [args.script]
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    entries = log.read(_log_path(args))
+    today = date.fromisoformat(args.date) if args.date else date.today()
+    for sid in ids:
+        path = out / f"{sid}-week-{packet.monday_of(today).isoformat()}.html"
+        path.write_text(packet.packet(scripts.load(sid), entries, today), encoding="utf-8")
+        print(path)
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="hand-script")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -47,6 +60,12 @@ def build_parser() -> argparse.ArgumentParser:
     s.add_argument("script", help="script id or 'all'")
     s.add_argument("--out", default="sheets")
     s.set_defaults(fn=cmd_sheets)
+    pk = sub.add_parser("packet", help="weekly packet: progress summary + graded daily drills")
+    pk.add_argument("script", help="script id or 'all'")
+    pk.add_argument("--out", default="packets")
+    pk.add_argument("--file", help="log path")
+    pk.add_argument("--date", help="any day in the target week, YYYY-MM-DD (default today)")
+    pk.set_defaults(fn=cmd_packet)
     lg = sub.add_parser("log", help="practice log")
     lg.add_argument("--file", help="log path (default data/practice-log.jsonl or $HAND_SCRIPT_LOG)")
     ls = lg.add_subparsers(dest="log_cmd", required=True)

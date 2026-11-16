@@ -50,6 +50,16 @@ class SheetTests(unittest.TestCase):
             self.assertEqual(len(set(chars)), n, f"{sid} duplicates")
         self.assertEqual(scripts.load("arabic")["direction"], "rtl")
 
+    def test_new_script_copy_lines_exact(self):
+        texts = lambda i: [c["text"] for c in scripts.load(i)["copy_lines"]]
+        self.assertIn("بسم الله الرحمن الرحيم", texts("arabic"))
+        self.assertIn("अग्निमीळे पुरोहितं यज्ञस्य देवमृत्विजम्", texts("devanagari"))
+        self.assertIn("いろはにほへと ちりぬるを", texts("hiragana"))
+
+    def test_arabic_names_distinct(self):
+        names = [l["name"] for l in scripts.load("arabic")["letters"]]
+        self.assertEqual(len(set(names)), 28)
+
     def test_unknown_script(self):
         with self.assertRaises(KeyError):
             scripts.load("nope")
