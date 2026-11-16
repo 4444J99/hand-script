@@ -48,4 +48,6 @@ the owner's "minutes or characters practiced" metric and the 10-minute daily min
 1. Plan + data-driven sheet generator + Greek and Hebrew letter/copy sheets.
 2. Practice log CLI with summaries and streaks.
 
+3. Arabic, Devanagari, Hiragana sheets (data files only).
+
 Out of scope for now: translation workflow, audio, OCR/feedback on scans.
