@@ -54,6 +54,18 @@ class LogTests(unittest.TestCase):
             Path(f).write_text("{bad\n", encoding="utf-8")
             self.assertEqual(cli.main(["log", "--file", f, "summary"]), 2)
 
+    def test_read_rejects_malformed_entries(self):
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "l.jsonl"
+            for bad in ("[1]", '{"date":"2026-11-01"}',
+                        '{"date":"bad","script":"g","minutes":1,"characters":0,"lines":0}',
+                        '{"date":"2026-11-01","script":"g","minutes":-1,"characters":0,"lines":0}'):
+                f.write_text(bad + "\n", encoding="utf-8")
+                with self.assertRaises(ValueError) as cm:
+                    log.read(f)
+                self.assertIn(":1:", str(cm.exception))
+                self.assertEqual(cli.main(["log", "--file", str(f), "summary"]), 2)
+
 
 if __name__ == "__main__":
     unittest.main()

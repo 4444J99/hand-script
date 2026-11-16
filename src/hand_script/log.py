@@ -36,10 +36,29 @@ def read(path: Path) -> list[dict]:
     for n, raw in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
         if raw.strip():
             try:
-                out.append(json.loads(raw))
+                obj = json.loads(raw)
             except json.JSONDecodeError as e:
                 raise ValueError(f"{path}:{n}: invalid JSON ({e.msg})") from e
+            out.append(_validate(obj, path, n))
     return out
+
+
+def _validate(obj: object, path: Path, n: int) -> dict:
+    if not isinstance(obj, dict):
+        raise ValueError(f"{path}:{n}: entry must be a JSON object")
+    for key in ("date", "script", "minutes", "characters", "lines"):
+        if key not in obj:
+            raise ValueError(f"{path}:{n}: missing key {key!r}")
+    try:
+        date.fromisoformat(obj["date"])
+    except (TypeError, ValueError) as e:
+        raise ValueError(f"{path}:{n}: bad date {obj['date']!r}") from e
+    for key in ("minutes", "characters", "lines"):
+        if not isinstance(obj[key], int) or isinstance(obj[key], bool) or obj[key] < 0:
+            raise ValueError(f"{path}:{n}: {key} must be a non-negative integer")
+    if not isinstance(obj["script"], str):
+        raise ValueError(f"{path}:{n}: script must be a string")
+    return obj
 
 
 def streaks(entries: list[dict], today: date) -> tuple[int, int]:
