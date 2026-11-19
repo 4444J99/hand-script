@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import itertools
 import json
 from collections import defaultdict
 from datetime import date, timedelta
@@ -11,16 +12,30 @@ DEFAULT_PATH = Path("data/practice-log.jsonl")
 DAILY_MINIMUM_MINUTES = 10  # the owner's daily minimum for script copying
 
 
-def make_entry(day: date, script: str, minutes: int, characters: int = 0,
-               lines: int = 0, focus: str = "", note: str = "") -> dict:
+def make_entry(
+    day: date,
+    script: str,
+    minutes: int,
+    characters: int = 0,
+    lines: int = 0,
+    focus: str = "",
+    note: str = "",
+) -> dict:
     if minutes < 0 or characters < 0 or lines < 0:
         raise ValueError("minutes, characters and lines must be >= 0")
     if minutes == 0 and characters == 0 and lines == 0:
         raise ValueError("an entry needs minutes, characters or lines")
     if not script.strip():
         raise ValueError("script is required")
-    return {"date": day.isoformat(), "script": script.strip().lower(), "minutes": minutes,
-            "characters": characters, "lines": lines, "focus": focus, "note": note}
+    return {
+        "date": day.isoformat(),
+        "script": script.strip().lower(),
+        "minutes": minutes,
+        "characters": characters,
+        "lines": lines,
+        "focus": focus,
+        "note": note,
+    }
 
 
 def append(path: Path, entry: dict) -> None:
@@ -70,7 +85,7 @@ def streaks(entries: list[dict], today: date) -> tuple[int, int]:
     if not days:
         return 0, 0
     longest = run = 1
-    for a, b in zip(days, days[1:]):
+    for a, b in itertools.pairwise(days):
         run = run + 1 if b - a == timedelta(days=1) else 1
         longest = max(longest, run)
     have = set(days)
@@ -116,6 +131,8 @@ def format_summary(s: dict) -> str:
         f"streak: current {s['current_streak']}, longest {s['longest_streak']}",
     ]
     for name, v in s["scripts"].items():
-        out.append(f"  {name}: {v['minutes']} min, {v['characters']} chars, "
-                   f"{v['lines']} lines, {v['days']} days")
+        out.append(
+            f"  {name}: {v['minutes']} min, {v['characters']} chars, "
+            f"{v['lines']} lines, {v['days']} days"
+        )
     return "\n".join(out)

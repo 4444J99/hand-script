@@ -1,0 +1,342 @@
+{
+  "schema": "hand-script.languages/1",
+  "source_note": "Derived from HS-T005 Turns 4-6 and refined by HS-T008 / thread 3100b354. Audit note: HS-T005 Turn 6 headlines '18 Languages across 9 Major Families' and '17 Founding Canonical Texts', but its itemized breakdown sums to 16 named languages (6+2+2+1+1+1+1+1+1) and 16 text bullets (grouping Analects/Dao De Jing/I Ching together). Those 16 attested Turn-6 entries carry status 'turn6-core'; the two Turn-4/5/roadmap additions (Avestan/Old Persian and Korean, or Ge'ez) carry status 'archive-expansion' so both counts are transparent.",
+  "families": [
+    {"id": "indo-european", "name": "Indo-European", "region": "Eurasia"},
+    {"id": "afroasiatic", "name": "Afroasiatic", "region": "West Asia & North/Horn of Africa"},
+    {"id": "sino-tibetan", "name": "Sino-Tibetan", "region": "East Asia"},
+    {"id": "dravidian", "name": "Dravidian", "region": "South India & Sri Lanka"},
+    {"id": "austronesian", "name": "Austronesian", "region": "Maritime Southeast Asia & Pacific"},
+    {"id": "uralic", "name": "Uralic", "region": "Northern & Central Europe / Western Siberia"},
+    {"id": "niger-congo", "name": "Niger-Congo (Bantu)", "region": "Sub-Saharan & East Africa"},
+    {"id": "turkic", "name": "Turkic", "region": "Anatolia & Central Asia"},
+    {"id": "uto-aztecan", "name": "Uto-Aztecan (grouped as Amerindian in HS-T005)", "region": "Mesoamerica"},
+    {"id": "koreanic", "name": "Koreanic (expansion in HS-T005 Turn 5 & HS-F013)", "region": "Korean Peninsula"}
+  ],
+  "languages": [
+    {
+      "id": "sanskrit",
+      "name": "Sanskrit",
+      "family": "indo-european",
+      "branch": "Indo-Iranian (Indo-Aryan)",
+      "tier": 1,
+      "archive_status": "turn6-core",
+      "scripts": ["devanagari"],
+      "pathways": [
+        {
+          "id": "vedic",
+          "label": "Vedic Sanskrit",
+          "founding_texts": ["Rigveda (c. 1500-1200 BCE)"],
+          "notes": "Archaic Indo-European morphology and pitch accent; historically oral before Brahmic/Devanagari manuscript transmission."
+        },
+        {
+          "id": "classical-paninian",
+          "label": "Classical Sanskrit",
+          "founding_texts": ["Panini, Ashtadhyayi", "Mahabharata / Bhagavad Gita"],
+          "notes": "Explicit phonological-morphological derivation rules foundational to modern linguistics."
+        }
+      ]
+    },
+    {
+      "id": "ancient-greek",
+      "name": "Ancient Greek",
+      "family": "indo-european",
+      "branch": "Hellenic",
+      "tier": 1,
+      "archive_status": "turn6-core",
+      "scripts": ["greek"],
+      "pathways": [
+        {
+          "id": "homeric",
+          "label": "Homeric / Epic Greek",
+          "founding_texts": ["Homer, Iliad", "Homer, Odyssey"],
+          "notes": "Mixed Ionic-Aeolic Kunstsprache; primary mythic-literary anchor."
+        },
+        {
+          "id": "koine-biblical",
+          "label": "Hellenistic Koine Greek",
+          "founding_texts": ["Septuagint (LXX)", "Greek New Testament"],
+          "notes": "Distinct syntactic and lexical register from Homer; essential for Hebrew-to-Greek translation chains (e.g., dabar -> logos, shalom -> eirene)."
+        }
+      ]
+    },
+    {
+      "id": "latin",
+      "name": "Latin",
+      "family": "indo-european",
+      "branch": "Italic",
+      "tier": 1,
+      "archive_status": "turn6-core",
+      "scripts": ["latin"],
+      "pathways": [
+        {
+          "id": "classical-augustan",
+          "label": "Classical / Augustan Latin",
+          "founding_texts": ["Ovid, Metamorphoses", "Virgil, Aeneid"],
+          "notes": "Primary poetic and mythic transformation lineage leading toward Dante."
+        },
+        {
+          "id": "late-vulgate",
+          "label": "Late / Ecclesiastical Latin",
+          "founding_texts": ["Jerome, Vulgate"],
+          "notes": "Transmission bridge rendering Hebrew and Koine Greek biblical terminology into Western European vernaculars."
+        }
+      ]
+    },
+    {
+      "id": "russian",
+      "name": "Russian (with East Slavic lineage)",
+      "family": "indo-european",
+      "branch": "Balto-Slavic (East Slavic)",
+      "tier": 1,
+      "archive_status": "turn6-core",
+      "scripts": ["cyrillic"],
+      "pathways": [
+        {
+          "id": "old-east-slavic-modern",
+          "label": "Old East Slavic to Modern Russian",
+          "founding_texts": ["Slovo o polku Igoreve (Tale of Igor's Campaign, late 12th c.)"],
+          "notes": "Demonstrates Balto-Slavic sound changes and Cyrillic orthographic adaptation."
+        }
+      ]
+    },
+    {
+      "id": "old-english",
+      "name": "Old English",
+      "family": "indo-european",
+      "branch": "Germanic (West Germanic)",
+      "tier": 2,
+      "archive_status": "turn6-core",
+      "scripts": ["latin"],
+      "pathways": [
+        {
+          "id": "west-saxon-poetic",
+          "label": "Insular West Saxon Poetic Koine",
+          "founding_texts": ["Beowulf"],
+          "notes": "Uses Insular Latin script augmented with thorn (þ), eth (ð), ash (æ), and wynn (ƿ)."
+        }
+      ]
+    },
+    {
+      "id": "middle-english",
+      "name": "Middle English",
+      "family": "indo-european",
+      "branch": "Germanic (West Germanic)",
+      "tier": 2,
+      "archive_status": "turn6-core",
+      "scripts": ["latin"],
+      "pathways": [
+        {
+          "id": "london-chaucerian",
+          "label": "Late 14th-c. London Middle English",
+          "founding_texts": ["Geoffrey Chaucer, The Canterbury Tales"],
+          "notes": "Included for historical-evolutionary continuity (Old -> Middle -> Modern English). Active phonological transcription, final -e scansion, and corpus tooling live in 4444J99/chaucer."
+        }
+      ]
+    },
+    {
+      "id": "hebrew",
+      "name": "Biblical & Rabbinic Hebrew",
+      "family": "afroasiatic",
+      "branch": "Semitic (Northwest Semitic)",
+      "tier": 1,
+      "archive_status": "turn6-core",
+      "scripts": ["hebrew"],
+      "pathways": [
+        {
+          "id": "biblical-masoretic",
+          "label": "Biblical Hebrew (Masoretic vocalization)",
+          "founding_texts": ["Torah / Hebrew Bible (Tanakh)"],
+          "notes": "Trilateral consonantal root morphology (binyanim); portions of Daniel and Ezra are in Biblical Aramaic."
+        }
+      ]
+    },
+    {
+      "id": "arabic",
+      "name": "Classical & Quranic Arabic",
+      "family": "afroasiatic",
+      "branch": "Semitic (Central Semitic)",
+      "tier": 1,
+      "archive_status": "turn6-core",
+      "scripts": ["arabic"],
+      "pathways": [
+        {
+          "id": "classical-quranic",
+          "label": "Quranic / Classical Arabic (Fusha)",
+          "founding_texts": ["The Quran"],
+          "notes": "Highly regular trilateral/quadrilateral root-and-pattern morphology (awzan) and cursive rasm + i'jam orthography."
+        }
+      ]
+    },
+    {
+      "id": "classical-chinese",
+      "name": "Classical / Literary Chinese (Wenyan)",
+      "family": "sino-tibetan",
+      "branch": "Sinitic",
+      "tier": 1,
+      "archive_status": "turn6-core",
+      "scripts": ["kanji"],
+      "pathways": [
+        {
+          "id": "warring-states-classical",
+          "label": "Pre-Qin Classical Chinese",
+          "founding_texts": ["Analects (Lunyu)", "Dao De Jing", "I Ching (Yijing)"],
+          "notes": "Source system for East Asian morphosyllabic characters; concise analytic syntax with high polysemy."
+        }
+      ]
+    },
+    {
+      "id": "japanese",
+      "name": "Classical & Modern Japanese",
+      "family": "sino-tibetan",
+      "branch": "Japonic (grouped under East Asian/Sinospheric in HS-T005; genetically Japonic, distinct from Sino-Tibetan)",
+      "tier": 1,
+      "archive_status": "turn6-core",
+      "scripts": ["kanji", "kana"],
+      "pathways": [
+        {
+          "id": "archaic-classical-japanese",
+          "label": "Early & Classical Japanese",
+          "founding_texts": ["Kojiki (712 CE)", "Man'yoshu"],
+          "notes": "Audit note: HS-T005 grouped Japanese with Classical Chinese by script borrowing; linguistically Japanese belongs to the Japonic family and combines morphographic kanji with moraic kana."
+        }
+      ]
+    },
+    {
+      "id": "tamil",
+      "name": "Classical Tamil",
+      "family": "dravidian",
+      "branch": "South Dravidian",
+      "tier": 2,
+      "archive_status": "turn6-core",
+      "scripts": ["latin"],
+      "pathways": [
+        {
+          "id": "sangam-classical",
+          "label": "Old / Sangam Tamil",
+          "founding_texts": ["Sangam Literature (c. 300 BCE - 300 CE)", "Tolkappiyam"],
+          "notes": "Non-Indo-European agglutinative classical tradition of South India; native Tamil Brahmic abugida planned for dedicated glyph expansion."
+        }
+      ]
+    },
+    {
+      "id": "classical-malay",
+      "name": "Classical Malay",
+      "family": "austronesian",
+      "branch": "Malayo-Polynesian",
+      "tier": 2,
+      "archive_status": "turn6-core",
+      "scripts": ["arabic", "latin"],
+      "pathways": [
+        {
+          "id": "jawi-rumi",
+          "label": "Classical Malay (Jawi Arabic script & Rumi Latin script)",
+          "founding_texts": ["Hikayat Hang Tuah", "Sulalatus Salatin (Malay Annals)"],
+          "notes": "Illustrates Austronesian affixation/reduplication and cross-family script adaptation (Arabic -> Jawi -> Latin)."
+        }
+      ]
+    },
+    {
+      "id": "finnish",
+      "name": "Finnish",
+      "family": "uralic",
+      "branch": "Finnic",
+      "tier": 2,
+      "archive_status": "turn6-core",
+      "scripts": ["latin"],
+      "pathways": [
+        {
+          "id": "kalevala-finnic",
+          "label": "Kalevalaic / Standard Finnish",
+          "founding_texts": ["Kalevala (compiled by Elias Lonnrot, 1835/1849)"],
+          "notes": "Non-Indo-European European language featuring rich agglutinative case morphology and vowel harmony."
+        }
+      ]
+    },
+    {
+      "id": "swahili",
+      "name": "Classical & Standard Swahili",
+      "family": "niger-congo",
+      "branch": "Atlantic-Congo (Bantu)",
+      "tier": 2,
+      "archive_status": "turn6-core",
+      "scripts": ["arabic", "latin"],
+      "pathways": [
+        {
+          "id": "utenzi-swahili",
+          "label": "Classical Swahili (Ajami Arabic & Latin orthography)",
+          "founding_texts": ["Utenzi wa Tambuka (1728) and classical Utenzi verse"],
+          "notes": "Bantu noun-class concord system combined with Indian Ocean Arabic lexical contact."
+        }
+      ]
+    },
+    {
+      "id": "turkish",
+      "name": "Ottoman & Modern Turkish",
+      "family": "turkic",
+      "branch": "Oghuz Turkic",
+      "tier": 3,
+      "archive_status": "turn6-core",
+      "scripts": ["arabic", "latin"],
+      "pathways": [
+        {
+          "id": "anatolian-ottoman-modern",
+          "label": "Old Anatolian / Ottoman to 1928 Modern Latin Reform",
+          "founding_texts": ["Yunus Emre, Divan (13th-14th c.)"],
+          "notes": "Agglutinative suffixation and vowel harmony; primary historical case study in deliberate national script transition (1928)."
+        }
+      ]
+    },
+    {
+      "id": "classical-nahuatl",
+      "name": "Classical Nahuatl",
+      "family": "uto-aztecan",
+      "branch": "Nahuan",
+      "tier": 3,
+      "archive_status": "turn6-core",
+      "scripts": ["latin"],
+      "pathways": [
+        {
+          "id": "sixteenth-century-alphabetic",
+          "label": "16th-c. Classical Nahuatl",
+          "founding_texts": ["Florentine Codex (Historia general de las cosas de Nueva Espana)"],
+          "notes": "Polysynthetic morphology and noun incorporation recorded in adapted Latin orthography alongside Indigenous pictorial traditions."
+        }
+      ]
+    },
+    {
+      "id": "korean",
+      "name": "Middle & Modern Korean",
+      "family": "koreanic",
+      "branch": "Koreanic",
+      "tier": 2,
+      "archive_status": "archive-expansion",
+      "scripts": ["hangul", "kanji"],
+      "pathways": [
+        {
+          "id": "sejong-hangul",
+          "label": "15th-c. Hunminjeongeum & Modern Korean",
+          "founding_texts": ["Hunminjeongeum Haerye (1446)", "Yongbieocheonga (Songs of the Dragons Flying to Heaven)"],
+          "notes": "Featured in HS-T005 Turn 5, HS-T009, and HS-F013 for featural script design."
+        }
+      ]
+    },
+    {
+      "id": "geez",
+      "name": "Classical Ethiopic (Ge'ez)",
+      "family": "afroasiatic",
+      "branch": "Semitic (South Semitic)",
+      "tier": 3,
+      "archive_status": "archive-expansion",
+      "scripts": ["ethiopic"],
+      "pathways": [
+        {
+          "id": "axumite-liturgical",
+          "label": "Classical Ge'ez",
+          "founding_texts": ["Kebra Nagast", "Ge'ez Biblical & Enochic corpus"],
+          "notes": "Featured in HS-T005 Turn 4 and HS-F013 (#10) as the South Semitic abugida ('fidel') exemplar."
+        }
+      ]
+    }
+  ]
+}

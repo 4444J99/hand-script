@@ -1,3 +1,8 @@
-from .cli import main
+"""Module entrypoint for `python -m hand_script`."""
 
-raise SystemExit(main())
+import sys
+
+from hand_script.cli import main
+
+if __name__ == "__main__":
+    sys.exit(main())

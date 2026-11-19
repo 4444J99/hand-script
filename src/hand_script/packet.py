@@ -46,13 +46,17 @@ def monday_of(day: date) -> date:
 
 
 def _drill_row(item: dict, level: int, rtl: bool) -> str:
-    kinds = {1: ["model", "ghost", "ghost"] + ["blank"] * 5,
-             2: ["model"] + ["blank"] * 7,
-             3: ["blank"] * 8}[level]
+    kinds = {
+        1: ["model", "ghost", "ghost"] + ["blank"] * 5,
+        2: ["model"] + ["blank"] * 7,
+        3: ["blank"] * 8,
+    }[level]
     cells = "".join(sheets._cell(item["form"], k) for k in kinds)
-    meta = f'<b>{escape(item["name"])}</b><br>{escape(item["sound"])}'
-    return (f'<div class="row"><div class="meta">{meta}</div>'
-            f'<div class="cells{" rtl" if rtl else ""}">{cells}</div></div>')
+    meta = f"<b>{escape(item['name'])}</b><br>{escape(item['sound'])}"
+    return (
+        f'<div class="row"><div class="meta">{meta}</div>'
+        f'<div class="cells{" rtl" if rtl else ""}">{cells}</div></div>'
+    )
 
 
 def _answer_key(items: list[dict], rtl: bool) -> str:
@@ -74,16 +78,16 @@ def packet(script: dict, entries: list[dict], today: date) -> str:
     summary = escape(log.format_summary(log.summarize(entries, today)))
     copies = script["copy_lines"]
     parts = [
-        f'<h1>{escape(script["name"])} - week of {monday.isoformat()}</h1>'
+        f"<h1>{escape(script['name'])} - week of {monday.isoformat()}</h1>"
         f'<div class="sub">{escape(LEVELS[level])} &middot; {minutes} min logged in '
-        f'{escape(sid)} &middot; daily minimum {log.DAILY_MINIMUM_MINUTES} min.</div>'
+        f"{escape(sid)} &middot; daily minimum {log.DAILY_MINIMUM_MINUTES} min.</div>"
         f'<pre class="sum">{summary}</pre>'
         '<div class="sub">Log each sitting: <code>hand-script log add '
         f'{escape(sid)} --minutes N --characters N --focus "..."</code></div>'
     ]
     for d, items in enumerate(week_letters(script, wi)):
         day = monday + timedelta(days=d)
-        title = f'Day {d + 1} - {day.strftime("%a %d %b")}' + (" - review" if d == 6 else "")
+        title = f"Day {d + 1} - {day.strftime('%a %d %b')}" + (" - review" if d == 6 else "")
         c = copies[d % len(copies)]
         text = escape(c["text"])
         style = ' style="direction:rtl;text-align:right"' if rtl else ""
@@ -92,10 +96,14 @@ def packet(script: dict, entries: list[dict], today: date) -> str:
             + "".join(_drill_row(i, level, rtl) for i in items)
             + (_answer_key(items, rtl) if level == 3 else "")
             + f'<div class="copy"><div class="src">Copy line: {escape(c["source"])}</div>'
-              f'<div class="line model dark"{style}>{text}</div><div class="line"></div></div>'
-              '<div class="sub">&#9744; done &nbsp; minutes ____</div></section>'
+            f'<div class="line model dark"{style}>{text}</div><div class="line"></div></div>'
+            '<div class="sub">&#9744; done &nbsp; minutes ____</div></section>'
         )
-    css_extra = ("<style>.key{font-size:16pt;color:#555}.sum{font-size:9pt;background:#f4f4f4;padding:2mm}"
-                 ".day{page-break-before:always}.day h2{font-size:13pt;margin:0 0 2mm}</style>")
-    page = sheets._page(f'{script["name"]} weekly packet', "".join(parts), script["direction"], script["font"])
+    css_extra = (
+        "<style>.key{font-size:16pt;color:#555}.sum{font-size:9pt;background:#f4f4f4;padding:2mm}"
+        ".day{page-break-before:always}.day h2{font-size:13pt;margin:0 0 2mm}</style>"
+    )
+    page = sheets._page(
+        f"{script['name']} weekly packet", "".join(parts), script["direction"], script["font"]
+    )
     return page.replace("</head>", css_extra + "</head>", 1)

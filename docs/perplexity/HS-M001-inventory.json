@@ -1,0 +1,191 @@
+{
+ "manifest": "HS-M001",
+ "version": "0.3",
+ "date": "2026-11-09",
+ "items": [
+  {
+   "id": "HS-F001",
+   "type": "file",
+   "title": "Unique Scripts Notebook Practice v1",
+   "path": "010426-unique_scripts-notebook-practice_v1.pdf",
+   "status": "inspected",
+   "related": "HS-A003"
+  },
+  {
+   "id": "HS-F002",
+   "type": "file",
+   "title": "Unique Scripts Notebook Practice v2 (text identical to v1)",
+   "path": "010426-unique_scripts-notebook-practice_v2.pdf",
+   "status": "inspected",
+   "related": "HS-A003"
+  },
+  {
+   "id": "HS-T001",
+   "type": "thread-export",
+   "title": "Digital and Analog Resources",
+   "path": "analog resources for learning alp.md",
+   "status": "inspected",
+   "related": "HS-A004"
+  },
+  {
+   "id": "HS-A004",
+   "type": "preservation-report",
+   "title": "Digital and Analog Resources \u2014 Preservation Report",
+   "path": "preservation/HS-T001-preservation-report.md",
+   "status": "generated",
+   "related": "HS-T001"
+  },
+  {
+   "id": "HS-T002",
+   "type": "thread-export",
+   "title": "Canonical Linguistics Exhaustive-List",
+   "path": "Exhaustive list of Canonical linguistic (&amp; all.md",
+   "status": "inspected",
+   "related": "HS-A005"
+  },
+  {
+   "id": "HS-A005",
+   "type": "preservation-report",
+   "title": "Canonical Linguistics Exhaustive-List \u2014 Preservation Report",
+   "path": "preservation/HS-T002-preservation-report.md",
+   "status": "generated",
+   "related": "HS-T002"
+  },
+  {
+   "id": "HS-T003",
+   "type": "thread-export",
+   "title": "Simultaneous Script Learning",
+   "path": "How many simultaneous scripts can be learned?.md",
+   "status": "inspected",
+   "related": "HS-A006"
+  },
+  {
+   "id": "HS-A006",
+   "type": "preservation-report",
+   "title": "Simultaneous Script Learning \u2014 Preservation Report",
+   "path": "preservation/HS-T003-preservation-report.md",
+   "status": "generated",
+   "related": "HS-T003"
+  },
+  {
+   "id": "HS-T004",
+   "type": "thread-export",
+   "title": "Roots and Stems Guide",
+   "path": "My goal is to learn the roots &amp; stems of all l.md",
+   "status": "inspected",
+   "related": "HS-A007"
+  },
+  {
+   "id": "HS-A007",
+   "type": "preservation-report",
+   "title": "Roots and Stems Guide \u2014 Preservation Report",
+   "path": "preservation/HS-T004-preservation-report.md",
+   "status": "generated",
+   "related": "HS-T004"
+  },
+  {
+   "id": "HS-T005",
+   "type": "thread-export",
+   "title": "Integrated Handwriting System",
+   "path": "My goal is to learn via handwriting practice the r.md",
+   "status": "inspected",
+   "related": "HS-A008"
+  },
+  {
+   "id": "HS-A008",
+   "type": "preservation-report",
+   "title": "Integrated Handwriting System \u2014 Preservation Report",
+   "path": "preservation/HS-T005-preservation-report.md",
+   "status": "generated",
+   "related": "HS-T005"
+  },
+  {
+   "id": "HS-T006",
+   "type": "thread-export",
+   "title": "Writing Systems Taxonomy",
+   "path": "Name the different alphabets.md",
+   "status": "inspected",
+   "related": "HS-A009"
+  },
+  {
+   "id": "HS-A009",
+   "type": "preservation-report",
+   "title": "Writing Systems Taxonomy \u2014 Preservation Report",
+   "path": "preservation/HS-T006-preservation-report.md",
+   "status": "generated",
+   "related": "HS-T006"
+  },
+  {
+   "id": "HS-T007",
+   "type": "thread-export",
+   "title": "Linguistics Meta-Canon",
+   "path": "Overview and Important Caveats.md",
+   "status": "inspected",
+   "related": "HS-A010"
+  },
+  {
+   "id": "HS-A010",
+   "type": "preservation-report",
+   "title": "Linguistics Meta-Canon \u2014 Preservation Report",
+   "path": "preservation/HS-T007-preservation-report.md",
+   "status": "generated",
+   "related": "HS-T007"
+  },
+  {
+   "id": "HS-A003",
+   "type": "preservation-report",
+   "title": "Notebook Practice PDFs \u2014 Preservation Report",
+   "path": "preservation/HS-F001-F002-preservation-report.md",
+   "status": "generated",
+   "related": "HS-F001;HS-F002"
+  },
+  {
+   "id": "HS-T009",
+   "type": "thread-export",
+   "title": "Languages with Unique Scripts (ChatGPT)",
+   "path": "ChatGPT-Languages with Unique Scripts-20261109-1629.md",
+   "status": "inspected",
+   "related": "HS-A011;HS-F001;HS-F002"
+  },
+  {
+   "id": "HS-T010",
+   "type": "thread-export",
+   "title": "Languages with Unique Scripts \u2014 Branch (ChatGPT)",
+   "path": "ChatGPT-Branch \u00b7 Languages with Unique Scripts-20261109-1627.md",
+   "status": "inspected",
+   "related": "HS-A012;HS-T009"
+  },
+  {
+   "id": "HS-T011",
+   "type": "thread-export",
+   "title": "Daily Folder Snapshot Guide (ChatGPT)",
+   "path": "ChatGPT-Daily Folder Snapshot Guide-20261109-1632.md",
+   "status": "inspected",
+   "related": "HS-A013"
+  },
+  {
+   "id": "HS-A011",
+   "type": "preservation-report",
+   "title": "Languages with Unique Scripts \u2014 Preservation Report",
+   "path": "preservation/HS-T009-preservation-report.md",
+   "status": "generated",
+   "related": "HS-T009"
+  },
+  {
+   "id": "HS-A012",
+   "type": "preservation-report",
+   "title": "Branch \u2014 Preservation Report",
+   "path": "preservation/HS-T010-preservation-report.md",
+   "status": "generated",
+   "related": "HS-T010"
+  },
+  {
+   "id": "HS-A013",
+   "type": "preservation-report",
+   "title": "Daily Folder Snapshot \u2014 Preservation Report",
+   "path": "preservation/HS-T011-preservation-report.md",
+   "status": "generated",
+   "related": "HS-T011"
+  }
+ ]
+}

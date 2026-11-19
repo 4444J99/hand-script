@@ -23,9 +23,11 @@ class LogTests(unittest.TestCase):
         self.assertEqual(log.streaks([], D(2026, 11, 17)), (0, 0))
 
     def test_summary(self):
-        ents = [e(D(2026, 11, 15), minutes=6, characters=24),
-                e(D(2026, 11, 15), minutes=5, lines=3),
-                e(D(2026, 11, 14), "Hebrew", 20, characters=27)]
+        ents = [
+            e(D(2026, 11, 15), minutes=6, characters=24),
+            e(D(2026, 11, 15), minutes=5, lines=3),
+            e(D(2026, 11, 14), "Hebrew", 20, characters=27),
+        ]
         s = log.summarize(ents, D(2026, 11, 15))
         self.assertEqual((s["sittings"], s["days"], s["minutes"]), (3, 2, 31))
         self.assertEqual(s["today_minutes"], 11)
@@ -45,9 +47,26 @@ class LogTests(unittest.TestCase):
     def test_cli_roundtrip_and_bad_file(self):
         with tempfile.TemporaryDirectory() as d:
             f = str(Path(d) / "sub" / "log.jsonl")
-            self.assertEqual(cli.main(["log", "--file", f, "add", "Greek", "--minutes", "12",
-                                       "--characters", "30", "--date", "2026-11-15",
-                                       "--focus", "αβγ"]), 0)
+            self.assertEqual(
+                cli.main(
+                    [
+                        "log",
+                        "--file",
+                        f,
+                        "add",
+                        "Greek",
+                        "--minutes",
+                        "12",
+                        "--characters",
+                        "30",
+                        "--date",
+                        "2026-11-15",
+                        "--focus",
+                        "αβγ",
+                    ]
+                ),
+                0,
+            )
             self.assertEqual(len(log.read(Path(f))), 1)
             self.assertEqual(cli.main(["log", "--file", f, "summary"]), 0)
             self.assertEqual(cli.main(["log", "--file", f, "add", "greek"]), 2)
@@ -57,9 +76,12 @@ class LogTests(unittest.TestCase):
     def test_read_rejects_malformed_entries(self):
         with tempfile.TemporaryDirectory() as d:
             f = Path(d) / "l.jsonl"
-            for bad in ("[1]", '{"date":"2026-11-01"}',
-                        '{"date":"bad","script":"g","minutes":1,"characters":0,"lines":0}',
-                        '{"date":"2026-11-01","script":"g","minutes":-1,"characters":0,"lines":0}'):
+            for bad in (
+                "[1]",
+                '{"date":"2026-11-01"}',
+                '{"date":"bad","script":"g","minutes":1,"characters":0,"lines":0}',
+                '{"date":"2026-11-01","script":"g","minutes":-1,"characters":0,"lines":0}',
+            ):
                 f.write_text(bad + "\n", encoding="utf-8")
                 with self.assertRaises(ValueError) as cm:
                     log.read(f)

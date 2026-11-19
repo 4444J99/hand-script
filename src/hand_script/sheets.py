@@ -33,7 +33,8 @@ h1 { font-size: 16pt; margin: 0 0 2mm; }
 .line { position: relative; height: 16mm; border-bottom: 0.35mm solid #47a; }
 .line::before { content: ""; position: absolute; left: 0; right: 0; top: 6mm;
                 border-top: 0.2mm dashed #9bd; }
-.line.model { font-size: 26pt; line-height: 16mm; color: #bbb; white-space: nowrap; overflow: hidden; }
+.line.model { font-size: 26pt; line-height: 16mm; color: #bbb;
+               white-space: nowrap; overflow: hidden; }
 .line.model.dark { color: #555; }
 """
 
@@ -62,17 +63,19 @@ def letter_sheet(script: dict, ghosts: int = 2, blanks: int = 8) -> str:
             cells = [_cell(form, "model")]
             cells += [_cell(form, "ghost") for _ in range(ghosts)]
             cells += [_cell(form, "blank") for _ in range(blanks)]
-            meta = f'<b>{escape(letter["name"])}</b><br>{escape(letter["sound"])}'
+            meta = f"<b>{escape(letter['name'])}</b><br>{escape(letter['sound'])}"
             rows.append(
                 f'<div class="row"><div class="meta">{meta}</div>'
                 f'<div class="cells{" rtl" if rtl else ""}">{"".join(cells)}</div></div>'
             )
     head = (
-        f'<h1>{escape(script["name"])} letters</h1>'
+        f"<h1>{escape(script['name'])} letters</h1>"
         f'<div class="sub">{escape(script["reason"])} &middot; trace the model, '
         "copy the light letters, then write from memory in the blank cells.</div>"
     )
-    return _page(f'{script["name"]} letter sheet', head + "".join(rows), script["direction"], script["font"])
+    return _page(
+        f"{script['name']} letter sheet", head + "".join(rows), script["direction"], script["font"]
+    )
 
 
 def copy_sheet(script: dict, blank_lines: int = 2) -> str:
@@ -91,8 +94,10 @@ def copy_sheet(script: dict, blank_lines: int = 2) -> str:
             + f'<div class="gloss">{escape(item["gloss"])}</div></div>'
         )
     head = (
-        f'<h1>{escape(script["name"])} line copying</h1>'
+        f"<h1>{escape(script['name'])} line copying</h1>"
         '<div class="sub">Daily minimum: copy 3-5 lines by hand, slowly. '
         "Script first, grammar second, translation third.</div>"
     )
-    return _page(f'{script["name"]} copy sheet', head + "".join(blocks), script["direction"], script["font"])
+    return _page(
+        f"{script['name']} copy sheet", head + "".join(blocks), script["direction"], script["font"]
+    )

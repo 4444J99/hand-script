@@ -1,0 +1,361 @@
+{
+  "schema": "hand-script.scripts/1",
+  "typology_authority": "Peter T. Daniels & William Bright, The World's Writing Systems (Oxford University Press, 1996)",
+  "sequencing_note": "Two entry priorities coexist in the archive without one superseding the other: (1) the owner's stated instinct in HS-T009 Turn 5-6 (Kanji radicals alongside Arabic, Cyrillic, and Latin as a 4-layer cognitive stack), and (2) the Notebook Practice Protocol's Greek-first progression by structural distance from Latin (HS-F001, 100 Poems roadmap). Both tracks are modeled explicitly.",
+  "tracks": {
+    "kanji-first-stack": {
+      "source": "HS-T009 Turns 5-6",
+      "description": "Four-layer rotational exposure pairing distinct cognitive regimes with low visual overlap.",
+      "scripts": ["latin", "cyrillic", "arabic", "kanji"]
+    },
+    "greek-first-protocol": {
+      "source": "HS-F001 / HS-T009 Turns 24-26",
+      "description": "Gradual progression starting from Greek alphabetic familiarity before introducing Cyrillic, Semitic abjads, kana, and logographic characters.",
+      "scripts": ["greek", "cyrillic", "hebrew", "arabic", "kana", "kanji"]
+    },
+    "typological-distance": {
+      "source": "HS-F013 (100 Poems Roadmap)",
+      "description": "Twelve-script sequence ordered by structural distance from Latin, with Kanji run as a slow parallel track.",
+      "scripts": [
+        "greek",
+        "cyrillic",
+        "hebrew",
+        "arabic",
+        "hangul",
+        "devanagari",
+        "kana",
+        "georgian",
+        "armenian",
+        "ethiopic",
+        "cherokee",
+        "tifinagh",
+        "kanji"
+      ]
+    }
+  },
+  "scripts": [
+    {
+      "id": "latin",
+      "name": "Latin",
+      "typology": "alphabet",
+      "direction": "ltr",
+      "ruling": "four-line",
+      "interference_group": "greco-roman-cyrillic-bicameral",
+      "unicode_blocks": ["Basic Latin", "Latin-1 Supplement", "Latin Extended-A"],
+      "inventory_summary": "26 basic bicameral letters plus language-specific diacritics and historical graphs",
+      "encoded_unit": "phoneme (consonants and vowels as equal segments)",
+      "cognitive_regime": "High-speed linear phonemic parsing; control and drafting layer for English writers",
+      "ductus_notes": "Bicameral ascender/x-height/baseline/descender proportions; distinguish Classical Roman majuscule/minuscule from Insular/Old English graphs (þ, ð, æ).",
+      "exemplars": [
+        {"glyph": "A a", "name": "A", "value": "/a/", "form_note": "Majuscule two-diagonal apex + crossbar; minuscule two-storey or single-storey bowl"},
+        {"glyph": "M m", "name": "M", "value": "/m/", "form_note": "Four-stroke majuscule; double-arch minuscule anchored to x-height"},
+        {"glyph": "S s", "name": "S", "value": "/s/", "form_note": "Balanced double curve; historical long s (ſ) in older print/hands"},
+        {"glyph": "Þ þ", "name": "Thorn", "value": "/θ, ð/", "form_note": "Old/Middle English runic graph with both ascender and descender"},
+        {"glyph": "Æ æ", "name": "Ash", "value": "/æ/", "form_note": "Fused ligature in Old English and Classical Latin diphthongs"}
+      ]
+    },
+    {
+      "id": "greek",
+      "name": "Greek",
+      "typology": "alphabet",
+      "direction": "ltr",
+      "ruling": "four-line",
+      "interference_group": "greco-roman-cyrillic-bicameral",
+      "unicode_blocks": ["Greek and Coptic", "Greek Extended"],
+      "inventory_summary": "24 bicameral letters (with word-final sigma ς) plus polytonic breathings and accents",
+      "encoded_unit": "phoneme (first full consonant-and-vowel alphabet, c. 8th c. BCE)",
+      "cognitive_regime": "Linear phonemic decoding with false-friend remapping against Latin shapes (Η, Ρ, Χ, Ν)",
+      "ductus_notes": "Start minuscule strokes smoothly from x-height or ascender; note descenders on β, γ, ζ, η, μ, ρ, φ, χ, ψ and strict positional split between medial σ and word-final ς.",
+      "exemplars": [
+        {"glyph": "Α α", "name": "Alpha", "value": "/a, aː/", "form_note": "Minuscule α drawn as a continuous single loop crossing at right"},
+        {"glyph": "Β β", "name": "Beta", "value": "/b/ (Anc.), /v/ (Mod.)", "form_note": "Minuscule β begins from below baseline descender up through two right bowls"},
+        {"glyph": "Γ γ", "name": "Gamma", "value": "/ɡ/ ([ŋ] before velars)", "form_note": "Minuscule γ dips below baseline in a narrow loop"},
+        {"glyph": "Δ δ", "name": "Delta", "value": "/d/ (Anc.), /ð/ (Mod.)", "form_note": "Triangle majuscule; minuscule δ coils from bowl into left-curving top hook"},
+        {"glyph": "Ε ε", "name": "Epsilon", "value": "/e/", "form_note": "Short mid-front vowel; compact twin-curve minuscule within x-height"},
+        {"glyph": "Ζ ζ", "name": "Zeta", "value": "/zd, dz/ (Anc.), /z/ (Mod.)", "form_note": "Single sweeping curve from top bar down into right-turning descender tail"},
+        {"glyph": "Η η", "name": "Eta", "value": "/ɛː/ (Anc.), /i/ (Mod.)", "form_note": "False friend to Latin H; minuscule η has short left stem and long right descender"},
+        {"glyph": "Θ θ", "name": "Theta", "value": "/tʰ/ (Anc.), /θ/ (Mod.)", "form_note": "Tall oval reaching ascender line bisected by horizontal bar"},
+        {"glyph": "Λ λ", "name": "Lambda", "value": "/l/", "form_note": "Long right-leaning main diagonal from ascender to baseline, propped by left leg"},
+        {"glyph": "Μ μ", "name": "Mu", "value": "/m/", "form_note": "Left stem drops to descender line before rising into u-curve"},
+        {"glyph": "Ξ ξ", "name": "Xi", "value": "/ks/", "form_note": "Three horizontal tiers (majuscule); coiled three-bend vertical stroke ending in descender hook"},
+        {"glyph": "Π π", "name": "Pi", "value": "/p/", "form_note": "Horizontal lintel over two legs anchored in x-height"},
+        {"glyph": "Ρ ρ", "name": "Rho", "value": "/r/", "form_note": "False friend to Latin P; minuscule ρ rises from descender into single bowl"},
+        {"glyph": "Σ σ ς", "name": "Sigma", "value": "/s/", "form_note": "σ initial/medial within x-height; ς strictly word-final with descender hook"},
+        {"glyph": "Φ φ", "name": "Phi", "value": "/pʰ/ (Anc.), /f/ (Mod.)", "form_note": "Central ring pierced by vertical shaft spanning ascender to descender"},
+        {"glyph": "Χ χ", "name": "Chi", "value": "/kʰ/ (Anc.), /x, ç/ (Mod.)", "form_note": "Diagonal cross sitting across baseline down to descender"},
+        {"glyph": "Ψ ψ", "name": "Psi", "value": "/ps/", "form_note": "Upward cup at x-height pierced by central vertical stem to descender"},
+        {"glyph": "Ω ω", "name": "Omega", "value": "/ɔː/ (Anc.), /o/ (Mod.)", "form_note": "Open horseshoe majuscule; rounded double-bowl minuscule ω on baseline"}
+      ]
+    },
+    {
+      "id": "cyrillic",
+      "name": "Cyrillic (Russian inventory)",
+      "typology": "alphabet",
+      "direction": "ltr",
+      "ruling": "four-line",
+      "interference_group": "greco-roman-cyrillic-bicameral",
+      "unicode_blocks": ["Cyrillic"],
+      "inventory_summary": "33 bicameral letters in modern Russian (including palatalization/hard signs ь, ъ)",
+      "encoded_unit": "phoneme plus palatalization-marking vowel pairs and signs",
+      "cognitive_regime": "Defamiliarized phonemic mirror; distinguishes block print forms from connected Russian cursive where т/и/ш/м/л share similar peaks",
+      "ductus_notes": "Block print mostly mirrors upright majuscules at x-height (except а, б, е, р, у, ф); Russian cursive differs sharply from print (e.g., cursive т resembles m, cursive д resembles g) — keep print and cursive drills separate.",
+      "exemplars": [
+        {"glyph": "Б б", "name": "Be", "value": "/b/", "form_note": "Minuscule б rises above x-height with top right-going flag"},
+        {"glyph": "В в", "name": "Ve", "value": "/v/", "form_note": "False friend to Latin B; minuscule в is scaled-down majuscule at x-height"},
+        {"glyph": "Г г", "name": "Ge", "value": "/ɡ/", "form_note": "Right-angle gallows stroke matching Greek Γ"},
+        {"glyph": "Д д", "name": "De", "value": "/d/", "form_note": "Trapezoid/arch body sitting on horizontal bar with two short baseline descender feet"},
+        {"glyph": "Ж ж", "name": "Zhe", "value": "/ʐ/", "form_note": "Central vertical spine flanked by symmetric meeting diagonals"},
+        {"glyph": "И и", "name": "I", "value": "/i/", "form_note": "Reversed Latin N; diagonal rises bottom-left to top-right"},
+        {"glyph": "Л л", "name": "El", "value": "/l, ɫ/", "form_note": "Curved left leg sweeping to baseline + straight vertical right leg"},
+        {"glyph": "П п", "name": "Pe", "value": "/p/", "form_note": "Square doorway matching Greek Π"},
+        {"glyph": "Р р", "name": "Er", "value": "/r/", "form_note": "False friend to Latin P; minuscule has descender stem"},
+        {"glyph": "У у", "name": "U", "value": "/u/", "form_note": "False friend to Latin y; diagonal fork descending left"},
+        {"glyph": "Ш ш", "name": "Sha", "value": "/ʂ/", "form_note": "Three upright prongs on flat baseline bar"},
+        {"glyph": "Щ щ", "name": "Shcha", "value": "/ɕː/", "form_note": "Like Ш with right-side descender loop/tick"},
+        {"glyph": "Ы ы", "name": "Yery", "value": "/ɨ/", "form_note": "Soft-sign bowl on left paired with vertical stem on right"},
+        {"glyph": "Ь ь", "name": "Myagkiy znak", "value": "/ʲ/ (palatalization)", "form_note": "No independent vowel sound; softens preceding consonant"},
+        {"glyph": "Я я", "name": "Ya", "value": "/ja/", "form_note": "Reversed R; iotated vowel"}
+      ]
+    },
+    {
+      "id": "hebrew",
+      "name": "Hebrew (Square & Cursive note)",
+      "typology": "abjad",
+      "direction": "rtl",
+      "ruling": "abjad-rtl",
+      "interference_group": "west-semitic-rtl-abjad",
+      "unicode_blocks": ["Hebrew"],
+      "inventory_summary": "22 consonant letters plus 5 word-final (sofit) forms (ך ם ן ף ץ); optional niqqud vowel points",
+      "encoded_unit": "consonantal segment (typically organized in trilateral roots C1-C2-C3)",
+      "cognitive_regime": "Root-pattern inference from right to left; readers supply vowel melody from morphological template and context",
+      "ductus_notes": "Square print (Ktav Ashuri) hangs from an upper ceiling line down to baseline; carefully distinguish near-minimal pairs ב/כ, ד/ר (corner overhang vs rounded shoulder), ה/ח/ת (left-leg gap and foot), and ו/ז/ן (width vs descender length). Modern handwritten cursive uses distinct rounded forms.",
+      "exemplars": [
+        {"glyph": "א", "name": "Alef", "value": "/ʔ, Ø/", "form_note": "Primary diagonal top-left to bottom-right, plus upper-right arm and lower-left leg"},
+        {"glyph": "ב", "name": "Bet / Vet", "value": "/b, v/", "form_note": "Base extends slightly rightward past vertical spine (distinguishes from כ)"},
+        {"glyph": "ד", "name": "Dalet", "value": "/d/", "form_note": "Top bar overhangs rightward past vertical leg (distinguishes from rounded ר)"},
+        {"glyph": "ה", "name": "He", "value": "/h/", "form_note": "Top bar + right leg + detached short left leg (gap at top distinguishes from ח)"},
+        {"glyph": "ו", "name": "Vav", "value": "/v, w, o, u/", "form_note": "Short top hook + vertical stem to baseline (mater lectionis for o/u)"},
+        {"glyph": "ח", "name": "Chet", "value": "/ħ, χ/", "form_note": "Closed arch/bridge connecting both vertical legs"},
+        {"glyph": "י", "name": "Yod", "value": "/j, i/", "form_note": "Small suspended stroke hanging from ceiling line (never reaches baseline)"},
+        {"glyph": "כ ך", "name": "Kaf / Khaf", "value": "/k, χ/", "form_note": "Rounded C-curve open to left; final ך drops straight below baseline"},
+        {"glyph": "ל", "name": "Lamed", "value": "/l/", "form_note": "Only Hebrew square letter with an ascender rising above the ceiling line"},
+        {"glyph": "מ ם", "name": "Mem", "value": "/m/", "form_note": "Open lower-left corner in medial מ; closed square in final ם"},
+        {"glyph": "נ ן", "name": "Nun", "value": "/n/", "form_note": "Narrow top + base in medial נ; long vertical descender in final ן"},
+        {"glyph": "ע", "name": "Ayin", "value": "/ʕ, Ø/", "form_note": "Two upper arms converging toward baseline tail"},
+        {"glyph": "פ ף", "name": "Pe / Fe", "value": "/p, f/", "form_note": "Outer spiral tucking inward; final ף uncurls downward past baseline"},
+        {"glyph": "צ ץ", "name": "Tsadi", "value": "/ts/", "form_note": "Bent stem met by upper-right arm; final ץ drops straight below baseline"},
+        {"glyph": "ק", "name": "Qof", "value": "/q, k/", "form_note": "Rounded right arch + detached left vertical descender"},
+        {"glyph": "ר", "name": "Resh", "value": "/r/", "form_note": "Smooth rounded upper-right corner without overhang"},
+        {"glyph": "ש", "name": "Shin / Sin", "value": "/ʃ, s/", "form_note": "Three upward branches from curved base; right dot = /ʃ/, left dot = /s/"},
+        {"glyph": "ת", "name": "Tav", "value": "/t/", "form_note": "Like ח/ה but left leg ends in an outward leftward foot"}
+      ]
+    },
+    {
+      "id": "arabic",
+      "name": "Arabic (Naskh study baseline)",
+      "typology": "abjad",
+      "direction": "rtl",
+      "ruling": "abjad-rtl",
+      "interference_group": "arabic-cursive-abjad",
+      "unicode_blocks": ["Arabic", "Arabic Supplement"],
+      "inventory_summary": "28 consonant letters (3 long-vowel matres ا و ي), up to 4 contextual forms, mandatory لا ligature, optional harakat",
+      "encoded_unit": "consonantal root and morphological pattern in mandatory cursive right-to-left joining",
+      "cognitive_regime": "Connected word-shape (rasm) parsing + dot (i'jam) disambiguation + consonantal root reconstruction",
+      "ductus_notes": "Write the continuous consonantal skeleton (rasm) right-to-left along the baseline before placing diacritical dots (i'jam) and vowel marks (harakat). Six non-connectors (ا د ذ ر ز و) join from the right but never link leftward to the next letter.",
+      "exemplars": [
+        {"glyph": "ا ـا", "name": "Alif", "value": "/ʔ, aː/", "form_note": "Tall vertical stroke; right-joining only (never connects leftward)"},
+        {"glyph": "ب ببب", "name": "Ba", "value": "/b/", "form_note": "Shallow boat rasm on baseline with 1 dot below (compare ت 2 above, ث 3 above)"},
+        {"glyph": "ج ججج", "name": "Jim", "value": "/dʒ, ɡ/", "form_note": "Wedge head above baseline + deep sub-baseline bowl in isolated/final; 1 dot inside/below (ح 0, خ 1 above)"},
+        {"glyph": "د ـد", "name": "Dal", "value": "/d/", "form_note": "Compact angled hook sitting on baseline; right-joining only (ذ adds 1 dot above)"},
+        {"glyph": "ر ـر", "name": "Ra", "value": "/r/", "form_note": "Short tooth dipping smoothly below baseline; right-joining only (ز adds 1 dot above)"},
+        {"glyph": "س سسس", "name": "Sin", "value": "/s/", "form_note": "Three baseline teeth + deep final bowl (ش adds 3 dots above)"},
+        {"glyph": "ع ععع", "name": "Ayn", "value": "/ʕ/", "form_note": "Open right-facing c-cup in initial, closed loop in medial/final + deep sub-baseline curve"},
+        {"glyph": "ك ككك", "name": "Kaf", "value": "/k/", "form_note": "Diagonal/S-beam in initial/medial (كـ); upright cradle with small inner kaf mark in isolated/final"},
+        {"glyph": "ل للل", "name": "Lam", "value": "/l/", "form_note": "Tall ascender descending into rounded bowl; forms mandatory ligature لا before Alif"},
+        {"glyph": "م ممم", "name": "Mim", "value": "/m/", "form_note": "Small closed loop on baseline with vertical or leftward tail in final/isolated"},
+        {"glyph": "ن ننن", "name": "Nun", "value": "/n/", "form_note": "Single tooth + 1 dot above in initial/medial; deep sub-baseline cup in final/isolated"},
+        {"glyph": "ه ههه", "name": "Ha", "value": "/h/", "form_note": "Four distinct contextual shapes: circle (isol.), double-loop (init.), figure-eight (med.), flag/loop (fin.)"},
+        {"glyph": "و ـو", "name": "Waw", "value": "/w, uː/", "form_note": "Small head loop on baseline + sweeping sub-baseline tail; right-joining only"},
+        {"glyph": "ي ييي", "name": "Ya", "value": "/j, iː/", "form_note": "Duck-curved S-bowl below baseline in isolated/final; single tooth + 2 dots below in initial/medial"}
+      ]
+    },
+    {
+      "id": "hangul",
+      "name": "Hangul",
+      "typology": "featural",
+      "direction": "ltr",
+      "ruling": "square-grid",
+      "interference_group": "east-asian-syllable-block",
+      "unicode_blocks": ["Hangul Jamo", "Hangul Syllables"],
+      "inventory_summary": "14 basic consonant jamo + 10 basic vowel jamo composed into morphosyllabic square blocks (11,172 precomposed Unicode syllables)",
+      "encoded_unit": "phonemic features arranged in two-dimensional CVC syllable blocks",
+      "cognitive_regime": "Articulatory-feature transparency (consonant shapes model tongue/lip/throat posture; stroke addition marks aspiration) combined with square syllable pacing",
+      "ductus_notes": "Stroke order strictly top-to-bottom and left-to-right inside an imaginary square (Tianzige): vertical vowels (ㅏ ㅓ ㅣ) sit to the right of the initial consonant (가); horizontal vowels (ㅗ ㅜ ㅡ) sit beneath it (고); final consonant (batchim) occupies the bottom tier (한).",
+      "exemplars": [
+        {"glyph": "ㄱ ㅋ", "name": "Giyeok / Kieuk", "value": "/k~ɡ/, /kʰ/", "form_note": "Velar organ shape (tongue root blocking soft palate); extra horizontal stroke adds aspiration"},
+        {"glyph": "ㄴ ㄷ ㅌ", "name": "Nieun / Digeut / Tieut", "value": "/n/, /t~d/, /tʰ/", "form_note": "Coronal organ shape (tongue tip touching upper alveolar ridge) + progressive stroke addition"},
+        {"glyph": "ㅁ ㅂ ㅍ", "name": "Mieum / Bieup / Pieup", "value": "/m/, /p~b/, /pʰ/", "form_note": "Bilabial organ shape (closed mouth square)"},
+        {"glyph": "ㅅ ㅈ ㅊ", "name": "Siot / Jieut / Chieut", "value": "/s/, /tɕ/, /tɕʰ/", "form_note": "Incisor/dental sibilant shape + top strokes"},
+        {"glyph": "ㅇ ㅎ", "name": "Ieung / Hieut", "value": "/Ø~ŋ/, /h/", "form_note": "Throat outline: silent onset placeholder initially, /ŋ/ in final batchim"},
+        {"glyph": "ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ", "name": "Basic vowels", "value": "/a, ʌ, o, u, ɯ, i/", "form_note": "Built on three philosophical strokes: vertical human (ㅣ), horizontal earth (ㅡ), short sun/heaven tick"}
+      ]
+    },
+    {
+      "id": "devanagari",
+      "name": "Devanagari",
+      "typology": "abugida",
+      "direction": "ltr",
+      "ruling": "head-line",
+      "interference_group": "brahmic-headline-abugida",
+      "unicode_blocks": ["Devanagari"],
+      "inventory_summary": "11-14 independent vowels + 33-35 base consonants with inherent /a/ + dependent matras + virama (्) and conjunct ligatures",
+      "encoded_unit": "akshara (orthographic syllable unit centered on consonant(s) + vowel)",
+      "cognitive_regime": "phonetic-grid consonant matrix (velar, palatal, retroflex, dental, labial × voicing/aspiration) + non-linear vowel placement around the consonant core",
+      "ductus_notes": "Draw the consonant body and vertical stem (danda) first, attach sub/super-linear vowel matras, and draw the horizontal head-line (shirorekha) LAST across the word (leaving prescribed breaks over ध, भ, थ, ष). Note visual vs logical order: short-i matra (ि) is written visually BEFORE its consonant.",
+      "exemplars": [
+        {"glyph": "अ आ इ ई उ ऊ", "name": "Independent vowels", "value": "/ə, aː, i, iː, u, uː/", "form_note": "Used syllable-initially; post-consonantal vowels use dependent matras (ा ि ी ु ू)"},
+        {"glyph": "क ख ग घ ङ", "name": "Velar varga", "value": "/kə, kʰə, ɡə, ɡʱə, ŋə/", "form_note": "Systematic five-column articulatory row: voiceless, aspirated, voiced, breathy-voiced, nasal"},
+        {"glyph": "त थ द ध न", "name": "Dental varga", "value": "/t̪ə, t̪ʰə, d̪ə, d̪ʱə, nə/", "form_note": "Contrast carefully with retroflex row ट ठ ड ढ ण"},
+        {"glyph": "प फ ब भ म", "name": "Labial varga", "value": "/pə, pʰə, bə, bʱə, mə/", "form_note": "भ keeps an open loop at top-left interrupting the shirorekha"},
+        {"glyph": "पद् / पद", "name": "Pad- (foot)", "value": "/pəd̪/", "form_note": "Virama (्) cancels inherent /ə/ on final द्"}
+      ]
+    },
+    {
+      "id": "kana",
+      "name": "Japanese Kana (Hiragana & Katakana)",
+      "typology": "syllabary",
+      "direction": "ltr",
+      "ruling": "square-grid",
+      "interference_group": "japanese-moraic-syllabary",
+      "unicode_blocks": ["Hiragana", "Katakana"],
+      "inventory_summary": "46 basic hiragana + 46 basic katakana + dakuten/handakuten voicing marks and yoon palatalized digraphs",
+      "encoded_unit": "mora (timed rhythmic beat: V, CV, palatalized CyV, geminate っ/ッ, moraic nasal ん/ン)",
+      "cognitive_regime": "Isochronous mora timing; cursive hiragana carries grammar/inflection while angular katakana marks loanwords, emphasis, and sound effects",
+      "ductus_notes": "Center every kana inside an equal square cell regardless of stroke count (1 to 4 strokes). Distinguish stroke endings: tome (clean stop), hane (flick toward next stroke), and harai (tapering sweep). Watch look-alike pairs: hiragana は/ほ, ぬ/め, る/ろ; katakana シ/ツ and ソ/ン (differentiated by stroke angle and start direction!).",
+      "exemplars": [
+        {"glyph": "あ ア", "name": "A", "value": "/a/", "form_note": "Hiragana from cursive 安; katakana from left radical of 阿"},
+        {"glyph": "か カ", "name": "Ka", "value": "/ka/", "form_note": "Both derive from 加; dakuten が/ガ voices /k/ to /ɡ/"},
+        {"glyph": "き キ", "name": "Ki", "value": "/ki/", "form_note": "In handwriting, lower loop of き has a natural break (unlike connected gothic print fonts)"},
+        {"glyph": "し シ / つ ツ", "name": "Shi / Tsu", "value": "/ɕi/, /tsu/", "form_note": "Katakana シ strokes move left-to-right upward; ツ strokes move top-to-bottom downward"},
+        {"glyph": "の ノ", "name": "No", "value": "/no/", "form_note": "Single sweeping stroke from 乃; ubiquitous Japanese genitive particle"},
+        {"glyph": "ん ン", "name": "N", "value": "/ɴ/", "form_note": "Full moraic nasal occupying one rhythmic beat"}
+      ]
+    },
+    {
+      "id": "kanji",
+      "name": "Han Characters / Japanese Kanji",
+      "typology": "morphographic",
+      "direction": "ltr",
+      "ruling": "square-grid",
+      "interference_group": "sinographic-morphosyllabic",
+      "unicode_blocks": ["CJK Unified Ideographs", "Kangxi Radicals"],
+      "inventory_summary": "214 classical Kangxi radicals; 2,136 Japanese Joyo kanji; thousands of Classical Chinese literary graphs",
+      "encoded_unit": "morpheme-syllable (semantic radical + phonetic/structural component)",
+      "cognitive_regime": "Meaning-first spatial composition and visual-semantic compression; decouples conceptual graph from single spoken reading (Classical Chinese monosyllables vs Japanese on'yomi/kun'yomi)",
+      "ductus_notes": "Balanced inside a Tianzige four-quadrant square so a 2-stroke character (人) and a 16-stroke character occupy identical area. Standard stroke order: top before bottom, left before right, horizontal before intersecting vertical, outside enclosure before inside before bottom closing stroke (日, 国).",
+      "exemplars": [
+        {"glyph": "人 (亻)", "name": "Person (ren / hito)", "value": "2 strokes", "form_note": "Left-falling sweep + right-falling press; compresses to 亻 on left of compounds (休)"},
+        {"glyph": "木", "name": "Tree / Wood (mu / ki)", "value": "4 strokes", "form_note": "Horizontal, vertical spine, left sweep, right press; doubles to 林 (grove), triples to 森 (forest)"},
+        {"glyph": "本", "name": "Root / Origin (ben / hon)", "value": "5 strokes", "form_note": "Indicative stroke marking the base/root of 木"},
+        {"glyph": "水 (氵)", "name": "Water (shui / mizu)", "value": "4 strokes", "form_note": "Central hooked spine flanked by splashes; compresses to 3-drop radical 氵 on left"},
+        {"glyph": "火 (灬)", "name": "Fire (huo / hi)", "value": "4 strokes", "form_note": "Two side sparks + central flame; compresses to four base dots 灬 below"},
+        {"glyph": "日 / 月", "name": "Sun / Moon (ri, yue / hi, tsuki)", "value": "4 strokes each", "form_note": "Enclosures closed at bottom after inner horizontal bars; combine in 明 (bright)"},
+        {"glyph": "口", "name": "Mouth / Opening (kou / kuchi)", "value": "3 strokes", "form_note": "Three strokes (left vertical, top+right corner, bottom close) — never drawn as a 1-stroke loop"},
+        {"glyph": "心 (忄)", "name": "Heart-Mind (xin / kokoro)", "value": "4 strokes", "form_note": "Curved base cradle + three dots; compresses to 忄 on left"},
+        {"glyph": "言", "name": "Speech / Word (yan / koto)", "value": "7 strokes", "form_note": "Three upper bars +口 below; semantic radical across language/poetry/record graphs"},
+        {"glyph": "足", "name": "Foot / Suffice (zu / ashi, tariru)", "value": "7 strokes", "form_note": "Upper box 口 + lower stepping strokes 止"},
+        {"glyph": "道", "name": "Way / Speak (dao / michi)", "value": "12 strokes", "form_note": "Head 首 written first, walking radical 辶 written last underneath"}
+      ]
+    },
+    {
+      "id": "georgian",
+      "name": "Georgian (Mkhedruli)",
+      "typology": "alphabet",
+      "direction": "ltr",
+      "ruling": "four-line",
+      "interference_group": "caucasian-unicameral",
+      "unicode_blocks": ["Georgian"],
+      "inventory_summary": "33 unicameral letters with near-one-to-one phonemic correspondence",
+      "encoded_unit": "phoneme (including three-way stop/affricate series: voiced, aspirated, ejective)",
+      "cognitive_regime": "Unicameral rounded ductus; high phonemic transparency paired with unfamiliar curved silhouettes requiring fine ascender/descender discrimination",
+      "ductus_notes": "No uppercase/lowercase distinction in ordinary prose; letter identity depends heavily on whether loops stay in x-height (ა, ო) or extend into ascenders (ბ, ზ, თ) or descenders (გ, დ, კ, ქ, წ).",
+      "exemplars": [
+        {"glyph": "ა", "name": "Ani", "value": "/ɑ/", "form_note": "Compact upward-curling hook inside x-height"},
+        {"glyph": "ბ", "name": "Bani", "value": "/b/", "form_note": "Bottom bowl + ascender neck curving top-right"},
+        {"glyph": "გ", "name": "Gani", "value": "/ɡ/", "form_note": "Upper small loop flowing into larger descender loop"},
+        {"glyph": "მ", "name": "Mani", "value": "/m/", "form_note": "Ascender stem curving down into closed baseline loop"}
+      ]
+    },
+    {
+      "id": "armenian",
+      "name": "Armenian",
+      "typology": "alphabet",
+      "direction": "ltr",
+      "ruling": "four-line",
+      "interference_group": "armenian-bicameral",
+      "unicode_blocks": ["Armenian"],
+      "inventory_summary": "38 bicameral letters (36 devised by Mesrop Mashtots c. 405 CE + 2 medieval additions օ, ֆ)",
+      "encoded_unit": "phoneme",
+      "cognitive_regime": "Rhythmic vertical-stem cadence; several shapes echo Latin u/n/h/m arches with completely distinct phonological values",
+      "ductus_notes": "Strong vertical picket rhythm; watch visual false friends with Latin (մ = /m/, ն = /n/, հ = /h/, ս = /s/, ա = /ɑ/).",
+      "exemplars": [
+        {"glyph": "Ա ա", "name": "Ayb", "value": "/ɑ/", "form_note": "Three-stemmed trough resting on baseline"},
+        {"glyph": "Բ բ", "name": "Ben", "value": "/b/ (E.), /pʰ/ (W.)", "form_note": "Tall ascender stem with crossbar"},
+        {"glyph": "Գ գ", "name": "Gim", "value": "/ɡ/ (E.), /kʰ/ (W.)", "form_note": "Top bowl with long descender stem"},
+        {"glyph": "Մ մ", "name": "Men", "value": "/m/", "form_note": "U-trough rising into high right-hand hook"}
+      ]
+    },
+    {
+      "id": "ethiopic",
+      "name": "Ge'ez / Ethiopic (Fidel)",
+      "typology": "abugida",
+      "direction": "ltr",
+      "ruling": "four-line",
+      "interference_group": "ethiopic-fidel-abugida",
+      "unicode_blocks": ["Ethiopic"],
+      "inventory_summary": "~26 base consonants × 7 vowel orders (approx. 182 core fidel syllabograms + labiovelars)",
+      "encoded_unit": "consonant-vowel fused graph across 7 systematic vowel modifications",
+      "cognitive_regime": "Tabular consonant × vowel grid cognition (source of Daniels' term 'abugida'); vowel rings, leg shortenings, and side ticks modify the base frame",
+      "ductus_notes": "Upright monumental strokes between baseline and cap/x-height; drill horizontally across the 7 vowel orders (ä, u, i, a, e, ə/Ø, o) for each base consonant so modifications become systematic rather than 182 isolated signs.",
+      "exemplars": [
+        {"glyph": "ሀ ሁ ሂ ሃ ሄ ህ ሆ", "name": "Hoy orders 1-7", "value": "/ha, hu, hi, haː, he, hə~h, ho/", "form_note": "Seven vowel orders modifying base ሀ"},
+        {"glyph": "ለ ሉ ሊ ላ ሌ ል ሎ", "name": "Lawi orders 1-7", "value": "/lə, lu, li, la, le, lɨ~l, lo/", "form_note": "Two-legged arch modified by right tick, foot bar, and ring"},
+        {"glyph": "ሰ ሱ ሲ ሳ ሴ ስ ሶ", "name": "Sawt orders 1-7", "value": "/sə, su, si, sa, se, sɨ~s, so/", "form_note": "Classic three-pronged or two-legged frame"}
+      ]
+    },
+    {
+      "id": "cherokee",
+      "name": "Cherokee Syllabary",
+      "typology": "syllabary",
+      "direction": "ltr",
+      "ruling": "four-line",
+      "interference_group": "greco-roman-cyrillic-bicameral",
+      "unicode_blocks": ["Cherokee"],
+      "inventory_summary": "85 syllabograms standardized by Sequoyah (c. 1821)",
+      "encoded_unit": "CV or V syllable (plus isolated /s/ sign Ꮝ)",
+      "cognitive_regime": "Pure syllabic mapping using repurposed Latin/numeral-like silhouettes with zero phonetic overlap with English Latin values (high visual interference warning!)",
+      "ductus_notes": "High interference with Latin shapes (Ꭰ = /a/, Ꭱ = /e/, Ꭲ = /i/, Ꮃ = /la/, Ᏼ = /yv/); must suppress automatic English letter-sound decoding.",
+      "exemplars": [
+        {"glyph": "Ꭰ Ꭱ Ꭲ Ꭳ Ꭴ Ꭵ", "name": "Six pure vowels", "value": "/a, e, i, o, u, ə̃/", "form_note": "Anchor vowel row of the 85-sign syllabary"},
+        {"glyph": "Ꮳ Ꮃ Ꭹ", "name": "Tsa-la-gi", "value": "/t͡salaɡi/", "form_note": "Autonym sequence spelling Tsalagi (Cherokee)"}
+      ]
+    },
+    {
+      "id": "tifinagh",
+      "name": "Tifinagh (Neo-Tifinagh)",
+      "typology": "alphabet",
+      "direction": "ltr",
+      "ruling": "four-line",
+      "interference_group": "geometric-amazigh",
+      "unicode_blocks": ["Tifinagh"],
+      "inventory_summary": "33 IRCAM Neo-Tifinagh geometric letters (evolved from ancient Libyco-Berber consonantal abjad)",
+      "encoded_unit": "phoneme (modern IRCAM standard includes explicit vowel signs ⴰ ⵉ ⵓ ⴻ)",
+      "cognitive_regime": "Geometric symmetry (circles, crosses, parallel bars, dots); tests spatial orientation and rotational invariance",
+      "ductus_notes": "Unicameral geometric forms of uniform height; rotational/mirror pairs (ⵎ/ⵡ/ⵀ, ⴷ/ⴹ, ⵔ/ⵕ) require deliberate directional awareness.",
+      "exemplars": [
+        {"glyph": "ⴰ ⵉ ⵓ ⴻ", "name": "Vowels a, i, u, e", "value": "/a, i, u, ə/", "form_note": "Circle ⴰ, zigzag ⵉ, open cup ⵓ, neutral vowel ⴻ"},
+        {"glyph": "ⵣ", "name": "Yaz", "value": "/z/", "form_note": "Emblematic Amazigh 'free person' glyph"}
+      ]
+    }
+  ]
+}

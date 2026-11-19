@@ -46,8 +46,21 @@ class PacketTests(unittest.TestCase):
 
     def test_cli_writes_all(self):
         with tempfile.TemporaryDirectory() as d:
-            self.assertEqual(cli.main(["packet", "all", "--out", d, "--file", f"{d}/none.jsonl",
-                                       "--date", "2026-11-18"]), 0)
+            self.assertEqual(
+                cli.main(
+                    [
+                        "packet",
+                        "all",
+                        "--out",
+                        d,
+                        "--file",
+                        f"{d}/none.jsonl",
+                        "--date",
+                        "2026-11-18",
+                    ]
+                ),
+                0,
+            )
             names = sorted(p.name for p in Path(d).iterdir() if p.suffix == ".html")
             self.assertEqual(len(names), 5)
             self.assertIn("greek-week-2026-11-16.html", names)

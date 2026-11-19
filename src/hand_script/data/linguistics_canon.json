@@ -1,0 +1,272 @@
+{
+  "schema": "hand-script.linguistics-canon/1",
+  "caveat": "Derived from HS-T007 (Overview and Important Caveats) and the stage structure of HS-T002. There is no universal, finite linguistics canon: reading lists are historically contingent, subfield-specific, and institutionally variable. Entries below form a structured meta-canon of recurring foundational monographs, papers, and reference corpora.",
+  "stages": ["undergraduate", "graduate", "doctoral"],
+  "subfields": [
+    "foundations_structuralism",
+    "generative_syntax",
+    "phonology",
+    "morphology",
+    "formal_semantics",
+    "pragmatics",
+    "sociolinguistics_anthropology",
+    "functional_typology",
+    "cognitive_usage",
+    "historical_comparative",
+    "writing_systems"
+  ],
+  "works": [
+    {
+      "id": "saussure-1916",
+      "authors": "Ferdinand de Saussure",
+      "title": "Cours de linguistique generale (Course in General Linguistics)",
+      "year": 1916,
+      "subfield": "foundations_structuralism",
+      "stage": "undergraduate",
+      "focus": "Langue vs parole, arbitrariness of the sign, synchronic vs diachronic analysis."
+    },
+    {
+      "id": "sapir-1921",
+      "authors": "Edward Sapir",
+      "title": "Language: An Introduction to the Study of Speech",
+      "year": 1921,
+      "subfield": "sociolinguistics_anthropology",
+      "stage": "undergraduate",
+      "focus": "Morphological typology, drift, and the relationship between linguistic form and culture."
+    },
+    {
+      "id": "bloomfield-1933",
+      "authors": "Leonard Bloomfield",
+      "title": "Language",
+      "year": 1933,
+      "subfield": "foundations_structuralism",
+      "stage": "undergraduate",
+      "focus": "American structuralist methodology, phoneme/morpheme distribution, and comparative reconstruction."
+    },
+    {
+      "id": "trubetzkoy-1939",
+      "authors": "Nikolai Trubetzkoy",
+      "title": "Grundzuge der Phonologie (Principles of Phonology)",
+      "year": 1939,
+      "subfield": "phonology",
+      "stage": "graduate",
+      "focus": "Phonological systems defined by distinctive oppositions and neutralization."
+    },
+    {
+      "id": "benveniste-1966",
+      "authors": "Emile Benveniste",
+      "title": "Problemes de linguistique generale (Problems in General Linguistics)",
+      "year": 1966,
+      "subfield": "foundations_structuralism",
+      "stage": "graduate",
+      "focus": "Enunciation, subjectivity in language, person deixis, and Indo-European lexical institutions."
+    },
+    {
+      "id": "chomsky-1957",
+      "authors": "Noam Chomsky",
+      "title": "Syntactic Structures",
+      "year": 1957,
+      "subfield": "generative_syntax",
+      "stage": "undergraduate",
+      "focus": "Inadequacy of finite-state grammars for natural syntax; transformational rules."
+    },
+    {
+      "id": "chomsky-1965",
+      "authors": "Noam Chomsky",
+      "title": "Aspects of the Theory of Syntax",
+      "year": 1965,
+      "subfield": "generative_syntax",
+      "stage": "graduate",
+      "focus": "Competence vs performance, lexicon/subcategorization, and deep vs surface structure."
+    },
+    {
+      "id": "chomsky-halle-1968",
+      "authors": "Noam Chomsky & Morris Halle",
+      "title": "The Sound Pattern of English (SPE)",
+      "year": 1968,
+      "subfield": "phonology",
+      "stage": "graduate",
+      "focus": "Rule-ordered generative phonology and binary distinctive-feature matrices."
+    },
+    {
+      "id": "prince-smolensky-2004",
+      "authors": "Alan Prince & Paul Smolensky",
+      "title": "Optimality Theory: Constraint Interaction in Generative Grammar",
+      "year": 2004,
+      "subfield": "phonology",
+      "stage": "doctoral",
+      "focus": "Ranked violable universal constraints replacing serial rewrite rules (1993 manuscript / 2004 book)."
+    },
+    {
+      "id": "aronoff-1976",
+      "authors": "Mark Aronoff",
+      "title": "Word Formation in Generative Grammar",
+      "year": 1976,
+      "subfield": "morphology",
+      "stage": "graduate",
+      "focus": "Word-based derivational morphology, productivity, and blocking."
+    },
+    {
+      "id": "anderson-1992",
+      "authors": "Stephen R. Anderson",
+      "title": "A-Morphous Morphology",
+      "year": 1992,
+      "subfield": "morphology",
+      "stage": "doctoral",
+      "focus": "Realizational paradigm rules without treating inflectional affixes as classical morpheme signs."
+    },
+    {
+      "id": "montague-1974",
+      "authors": "Richard Montague",
+      "title": "Formal Philosophy: Selected Papers",
+      "year": 1974,
+      "subfield": "formal_semantics",
+      "stage": "doctoral",
+      "focus": "Model-theoretic intensional logic applied compositionally to natural language syntax."
+    },
+    {
+      "id": "chierchia-mcconnell-ginet-2000",
+      "authors": "Gennaro Chierchia & Sally McConnell-Ginet",
+      "title": "Meaning and Grammar: An Introduction to Semantics",
+      "year": 2000,
+      "subfield": "formal_semantics",
+      "stage": "undergraduate",
+      "focus": "Truth-conditional semantics, quantification, presupposition, and type-driven composition."
+    },
+    {
+      "id": "austin-1962",
+      "authors": "J. L. Austin",
+      "title": "How to Do Things with Words",
+      "year": 1962,
+      "subfield": "pragmatics",
+      "stage": "undergraduate",
+      "focus": "Performatives and the locutionary, illocutionary, and perlocutionary dimensions of speech acts."
+    },
+    {
+      "id": "grice-1975",
+      "authors": "H. Paul Grice",
+      "title": "Logic and Conversation (in Studies in the Way of Words)",
+      "year": 1975,
+      "subfield": "pragmatics",
+      "stage": "undergraduate",
+      "focus": "Cooperative Principle, conversational maxims, and conversational implicature."
+    },
+    {
+      "id": "labov-1972",
+      "authors": "William Labov",
+      "title": "Sociolinguistic Patterns",
+      "year": 1972,
+      "subfield": "sociolinguistics_anthropology",
+      "stage": "undergraduate",
+      "focus": "Quantitative variationist sociolinguistics, social stratification, and sound change in progress."
+    },
+    {
+      "id": "eckert-2000",
+      "authors": "Penelope Eckert",
+      "title": "Linguistic Variation as Social Practice",
+      "year": 2000,
+      "subfield": "sociolinguistics_anthropology",
+      "stage": "doctoral",
+      "focus": "Third-wave variation study linking phonetic style to communities of practice and indexical fields."
+    },
+    {
+      "id": "greenberg-1963",
+      "authors": "Joseph H. Greenberg",
+      "title": "Some Universals of Grammar with Particular Reference to the Order of Meaningful Elements",
+      "year": 1963,
+      "subfield": "functional_typology",
+      "stage": "undergraduate",
+      "focus": "Implicational word-order universals and cross-linguistic sampling."
+    },
+    {
+      "id": "comrie-1989",
+      "authors": "Bernard Comrie",
+      "title": "Language Universals and Linguistic Typology",
+      "year": 1989,
+      "subfield": "functional_typology",
+      "stage": "graduate",
+      "focus": "Cross-linguistic alignment (ergative/accusative), animacy hierarchies, and relative clauses."
+    },
+    {
+      "id": "halliday-2014",
+      "authors": "M. A. K. Halliday & Christian M. I. M. Matthiessen",
+      "title": "Halliday's Introduction to Functional Grammar",
+      "year": 2014,
+      "subfield": "functional_typology",
+      "stage": "graduate",
+      "focus": "Ideational, interpersonal, and textual metafunctions in Systemic Functional Linguistics."
+    },
+    {
+      "id": "lakoff-johnson-1980",
+      "authors": "George Lakoff & Mark Johnson",
+      "title": "Metaphors We Live By",
+      "year": 1980,
+      "subfield": "cognitive_usage",
+      "stage": "undergraduate",
+      "focus": "Conceptual metaphor and embodied grounding of abstract semantic domains."
+    },
+    {
+      "id": "tomasello-2003",
+      "authors": "Michael Tomasello",
+      "title": "Constructing a Language: A Usage-Based Theory of Language Acquisition",
+      "year": 2003,
+      "subfield": "cognitive_usage",
+      "stage": "graduate",
+      "focus": "Intention-reading, pattern-finding, and emergent constructional grammar."
+    },
+    {
+      "id": "meillet-1921",
+      "authors": "Antoine Meillet",
+      "title": "Linguistique historique et linguistique generale",
+      "year": 1921,
+      "subfield": "historical_comparative",
+      "stage": "graduate",
+      "focus": "Comparative method, grammaticalization, and social drivers of historical language change."
+    },
+    {
+      "id": "campbell-2013",
+      "authors": "Lyle Campbell",
+      "title": "Historical Linguistics: An Introduction",
+      "year": 2013,
+      "subfield": "historical_comparative",
+      "stage": "undergraduate",
+      "focus": "Regularity of sound change, comparative reconstruction, analogy, borrowing, and distant-genetic criteria."
+    },
+    {
+      "id": "sampson-1985",
+      "authors": "Geoffrey Sampson",
+      "title": "Writing Systems: A Linguistic Introduction",
+      "year": 1985,
+      "subfield": "writing_systems",
+      "stage": "undergraduate",
+      "focus": "Semasiographic vs glottographic taxonomy and introduction of the featural category for Hangul."
+    },
+    {
+      "id": "daniels-bright-1996",
+      "authors": "Peter T. Daniels & William Bright (eds.)",
+      "title": "The World's Writing Systems",
+      "year": 1996,
+      "subfield": "writing_systems",
+      "stage": "graduate",
+      "focus": "Authoritative reference spine defining abjad, abugida, alphabet, syllabary, logosyllabary, and featural systems."
+    },
+    {
+      "id": "coulmas-2003",
+      "authors": "Florian Coulmas",
+      "title": "Writing Systems: An Introduction to Their Linguistic Analysis",
+      "year": 2003,
+      "subfield": "writing_systems",
+      "stage": "graduate",
+      "focus": "Orthographic depth, grapheme theory, script reform, and sociolinguistics of literacy."
+    },
+    {
+      "id": "pimentel-2021",
+      "authors": "Tiago Pimentel, Brian Roark & Ryan Cotterell",
+      "title": "The Taxonomy of Writing Systems: How to Measure How Logographic a System Is",
+      "year": 2021,
+      "subfield": "writing_systems",
+      "stage": "doctoral",
+      "focus": "Computational/information-theoretic continuum metric for logography vs phonography (cited in HS-T006)."
+    }
+  ]
+}
