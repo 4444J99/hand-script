@@ -1,0 +1,27 @@
+{
+ "repo": "hand-script",
+ "slug": "4444J99/hand-script",
+ "archived_upstream": false,
+ "prs": {
+  "prs_total": 6,
+  "prs_merged": 5,
+  "prs_open": 1,
+  "prs_closed_unmerged": 0
+ },
+ "closed_classes": {},
+ "supersession_links": [],
+ "open_pr_actions": [
+  {
+   "pr": 1,
+   "action": "keep",
+   "title": "feat: build initial handwriting, script typology, and etymology workbench",
+   "idle_days": -1
+  }
+ ],
+ "issues": {
+  "total": 0,
+  "open": 0,
+  "stale": 0
+ },
+ "generated": "2026-11-17"
+}
