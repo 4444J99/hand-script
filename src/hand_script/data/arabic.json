@@ -1,0 +1,274 @@
+{
+ "id": "arabic",
+ "name": "Arabic",
+ "direction": "rtl",
+ "order": 5,
+ "font": "'Geeza Pro','Al Bayan',serif",
+ "reason": "Quranic and classical Arabic: the 28 letters (isolated forms)",
+ "letters": [
+  {
+   "upper": "",
+   "lower": "ا",
+   "name": "alif",
+   "sound": "long a / glottal carrier",
+   "practice": [
+    "ا"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ب",
+   "name": "ba",
+   "sound": "b",
+   "practice": [
+    "ب"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ت",
+   "name": "ta",
+   "sound": "t",
+   "practice": [
+    "ت"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ث",
+   "name": "tha",
+   "sound": "th (think)",
+   "practice": [
+    "ث"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ج",
+   "name": "jim",
+   "sound": "j",
+   "practice": [
+    "ج"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ح",
+   "name": "haa (pharyngeal)",
+   "sound": "ḥ (breathy h, pharyngeal)",
+   "practice": [
+    "ح"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "خ",
+   "name": "kha",
+   "sound": "kh (as in Bach)",
+   "practice": [
+    "خ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "د",
+   "name": "dal",
+   "sound": "d",
+   "practice": [
+    "د"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ذ",
+   "name": "dhal",
+   "sound": "dh (this)",
+   "practice": [
+    "ذ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ر",
+   "name": "ra",
+   "sound": "r (rolled)",
+   "practice": [
+    "ر"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ز",
+   "name": "zayn",
+   "sound": "z",
+   "practice": [
+    "ز"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "س",
+   "name": "sin",
+   "sound": "s",
+   "practice": [
+    "س"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ش",
+   "name": "shin",
+   "sound": "sh",
+   "practice": [
+    "ش"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ص",
+   "name": "sad",
+   "sound": "ṣ (emphatic s)",
+   "practice": [
+    "ص"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ض",
+   "name": "dad",
+   "sound": "ḍ (emphatic d)",
+   "practice": [
+    "ض"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ط",
+   "name": "ta (emphatic)",
+   "sound": "ṭ (emphatic t)",
+   "practice": [
+    "ط"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ظ",
+   "name": "za (emphatic)",
+   "sound": "ẓ (emphatic dh)",
+   "practice": [
+    "ظ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ع",
+   "name": "ayn",
+   "sound": "ʿ (pharyngeal)",
+   "practice": [
+    "ع"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "غ",
+   "name": "ghayn",
+   "sound": "gh (gargled r)",
+   "practice": [
+    "غ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ف",
+   "name": "fa",
+   "sound": "f",
+   "practice": [
+    "ف"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ق",
+   "name": "qaf",
+   "sound": "q (back k)",
+   "practice": [
+    "ق"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ك",
+   "name": "kaf",
+   "sound": "k",
+   "practice": [
+    "ك"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ل",
+   "name": "lam",
+   "sound": "l",
+   "practice": [
+    "ل"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "م",
+   "name": "mim",
+   "sound": "m",
+   "practice": [
+    "م"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ن",
+   "name": "nun",
+   "sound": "n",
+   "practice": [
+    "ن"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ه",
+   "name": "ha",
+   "sound": "h",
+   "practice": [
+    "ه"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "و",
+   "name": "waw",
+   "sound": "w / long u",
+   "practice": [
+    "و"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ي",
+   "name": "ya",
+   "sound": "y / long i",
+   "practice": [
+    "ي"
+   ]
+  }
+ ],
+ "copy_lines": [
+  {
+   "source": "Quran 1:1",
+   "text": "بسم الله الرحمن الرحيم",
+   "gloss": "In the name of God, the Compassionate, the Merciful"
+  },
+  {
+   "source": "Quran 1:2",
+   "text": "الحمد لله رب العالمين",
+   "gloss": "Praise be to God, Lord of the worlds"
+  }
+ ]
+}

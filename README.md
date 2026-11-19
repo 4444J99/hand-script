@@ -4,11 +4,13 @@
 practice material, stroke and letterform notes, and etymology of the scripts being learned.
 It is not Chaucer or Middle English scansion (that is `4444J99/chaucer`, which was this
 repository's name until 2026-11-15) and not vers.forms, the owner's poetry studio
-(`4444J99/journal-handwritten-web`, `4444J99/versforms`). Private.
+(`4444J99/journal-handwritten-web`, `4444J99/versforms`). Public since 2026-11-18.
 
 Origin: the Perplexity Space `053d129c-8941-4aa7-8dde-61aede81813d` began as a
 handwriting-practice and linguistics curriculum (writing systems, etymological roots, 18
 languages in nine families). Its Middle English turn of 2026-11-10 moved to `chaucer`.
+
+Plan: `.claude/plans/2026-11-16-handwriting-practice-and-tracker.md`.
 
 ## Overview
 
@@ -19,7 +21,10 @@ and deterministic printable A4 HTML handwriting sheets.
 ### Repository Layout
 
 - `docs/perplexity/` — Verbatim preserved Space artifacts (`HS-M001-project-manifest.md`, `HS-M001-inventory.json`, `HS-F001-F002-preservation-report.md`) and `PROVENANCE.md` with verified SHA-256 digests.
-- `src/hand_script/data/` — Five structured JSON registries:
+- `src/hand_script/data/` — Five structured JSON registries, plus five alphabet
+  data files (`arabic.json`, `devanagari.json`, `greek.json`, `hebrew.json`,
+  `hiragana.json`) with letter inventories for the printable sheets, log, and
+  weekly packet below:
   - `project_manifest.json` (`hand-script.manifest/1`): 12 native Perplexity threads, 3 imported ChatGPT exports, 3 SHA-256-verified repo documents, 3 audited unrecovered claims, and component status parity.
   - `scripts.json` (`hand-script.scripts/1`): 14 writing systems typed under Daniels & Bright (1996) (`alphabet`, `abjad`, `abugida`, `syllabary`, `morphographic`, `featural`), 4 ruling geometries (`four-line`, `abjad-rtl`, `head-line`, `square-grid`), ductus notes, exemplar glyphs, and 3 coexisting sequencing tracks (`kanji-first-stack`, `greek-first-protocol`, `typological-distance`).
   - `languages.json` (`hand-script.languages/1`): Comparative language and founding-text pathways across 9+ language families, separating Homeric vs Koine/Septuagint Greek and Classical Augustan vs Vulgate Latin, with an explicit boundary pointer to `4444J99/chaucer` for Middle English scansion.
@@ -27,7 +32,10 @@ and deterministic printable A4 HTML handwriting sheets.
   - `linguistics_canon.json` (`hand-script.linguistics-canon/1`): 28 recurring foundational works staged across `undergraduate`, `graduate`, and `doctoral` study and 11 subfields.
 - `src/hand_script/` — Core library and `hand-script` CLI:
   - `manifest.py`: Schema, UUID, and SHA-256 provenance verifier.
-  - `scripts.py`: Writing-system catalog and `check_interference` analyzer (flags concurrent lookalike bicameral scripts, concurrent initial RTL abjads, and concurrency-cap overruns while marking numerical thresholds heuristic).
+  - `scripts.py`: Writing-system catalog and `check_interference` analyzer (flags concurrent lookalike bicameral scripts, concurrent initial RTL abjads, and concurrency-cap overruns while marking numerical thresholds heuristic); also the alphabet-data loader (`available()` / `load()`) for the sheets, log, and packet commands.
+  - `log.py`: Append-only JSONL practice log (`make_entry` / `append` / `read` / `summarize`), streaks, and daily-minimum tracking.
+  - `packet.py`: Weekly practice packet builder (progress summary from the log plus 7 days of drills graded by minutes logged).
+  - `sheets.py`: Printable HTML practice sheets — letter sheets and line-copy sheets per alphabet file.
   - `unicode_inspect.py`: Pure-stdlib `unicodedata` grapheme cluster and combining-mark inspector (Greek polytonic diacritics, Hebrew niqqud, Arabic harakat, Devanagari matras/virama).
   - `curriculum.py`: Comparative language map and staged linguistics meta-canon queries.
   - `etymology.py`: Typed lexical network validator that rejects cross-family `cognate` edges and cross-language `word_formation` edges.
@@ -36,7 +44,7 @@ and deterministic printable A4 HTML handwriting sheets.
   - `practice.py`: Deterministic A4 HTML exemplar glyph sheets and multi-script passage practice sheets with inline SVG rulings (`four-line`, right-aligned `abjad-rtl`, Shirorekha `head-line`, and Tianzige `square-grid`).
   - `atlas.py`: Self-contained HTML comparative script, root, and canon atlas.
 - `sheets/` — Committed byte-deterministic HTML deliverables (`greek_alphabet.glyph.html`, `kanji_radicals.glyph.html`, `arabic_abjad.glyph.html`, `devanagari_abugida.glyph.html`, `opening_passages.practice.html`, `hand_script_atlas.html`).
-- `tests/` — 19 `pytest` suites covering schema validation, SHA-256 provenance, cross-family cognate rejection, rendering gates, SVG geometry, sheet determinism, and CLI subcommands.
+- `tests/` — `pytest` suites covering schema validation, SHA-256 provenance, cross-family cognate rejection, rendering gates, SVG geometry, sheet determinism, CLI subcommands, and the log / packet / sheet layers (40 tests total).
 
 ## Archive Audits & Design Guardrails
 
@@ -45,6 +53,29 @@ and deterministic printable A4 HTML handwriting sheets.
 3. **Cognate vs translation discipline:** Cross-family links cannot be labeled `cognate`. Semitic `שָׁלוֹם` and `سَلَام` share root `*š-l-m` (`cognate`), whereas Septuagint `εἰρήνη` / `σωτηρία` and Vulgate `pāx` are modeled as passage-anchored `translation` edges.
 4. **Coexisting sequencing tracks:** Neither the owner's 4-layer `kanji-first-stack` (`HS-T009` Turns 5–6) nor the `greek-first-protocol` (`HS-F001`) is erased; both are first-class tracks in `scripts.json`.
 5. **Unexported upstream claims:** The claimed 4,000-reference attachment in `HS-T002` and the eight starter Markdown files claimed in `HS-T005` were never exported into the Perplexity Space and are documented under `unrecovered_claims` in `project_manifest.json`.
+
+## Practice sheets, log & weekly packet
+
+```bash
+# Printable HTML sheets (letter sheet + line-copy sheet per script)
+.venv/bin/hand-script sheets all --out sheets
+.venv/bin/hand-script sheets greek --out sheets
+
+# Practice log (append-only `data/practice-log.jsonl`, or `--file` / `$HAND_SCRIPT_LOG`)
+.venv/bin/hand-script log --file data/practice-log.jsonl add greek --minutes 10 --lines 3 --characters 45 --focus "α β γ"
+.venv/bin/hand-script log --file data/practice-log.jsonl summary
+
+# Weekly packet: progress summary from the log + 7 days of drills graded by
+# minutes logged (under 60 min trace, under 180 copy, then recall; day 7 reviews)
+.venv/bin/hand-script packet greek --out packets
+.venv/bin/hand-script packet all --date 2026-11-18
+```
+
+New script = new JSON file in `src/hand_script/data/` (a `letters` table with a
+`direction` of `ltr` / `rtl`); it is picked up by `sheets all` / `packet all`
+automatically. Note the two log tools differ by design: `log add` / `log summary`
+is the append-only sitting log above, while `check-log` validates a JSONL log in
+the Notebook Practice Protocol format (`notebook.py`).
 
 ## Quickstart
 
@@ -85,8 +116,9 @@ uv pip install --python .venv/bin/python -e ".[dev]"
 
 ## Verification
 
-Verified locally across Python `3.11.17`, `3.12.15`, and `3.13.16` (`ruff check .`,
-`ruff format --check .`, and `pytest` — 19 passed in ~0.2s per interpreter). Note that
-hosted GitHub Actions runners on private repositories under `4444J99` require billing/runner
-entitlement to start jobs; `.github/workflows/ci.yml` mirrors the exact local `3.11` /
-`3.12` / `3.13` verification matrix.
+Verified locally across Python `3.11`, `3.12`, and `3.13` (`ruff check .`,
+`ruff format --check .`, and `pytest` — 40 passed per interpreter).
+`.github/workflows/ci.yml` mirrors the exact local `3.11` / `3.12` / `3.13`
+verification matrix. (History: the PR #1 CI runs of 2026-11-16 died at provisioning
+with `runner_id 0` — the repo was private then and the account's payments had
+failed; the repo went public 2026-11-18, so CI now runs on the public-repo tier.)

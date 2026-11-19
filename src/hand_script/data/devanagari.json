@@ -1,0 +1,413 @@
+{
+ "id": "devanagari",
+ "name": "Devanagari",
+ "direction": "ltr",
+ "order": 7,
+ "font": "'Devanagari MT','Kohinoor Devanagari',serif",
+ "reason": "Sanskrit and Hindi: vowels and consonants",
+ "letters": [
+  {
+   "upper": "",
+   "lower": "अ",
+   "name": "vowel a",
+   "sound": "a",
+   "practice": [
+    "अ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "आ",
+   "name": "vowel ā",
+   "sound": "ā",
+   "practice": [
+    "आ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "इ",
+   "name": "vowel i",
+   "sound": "i",
+   "practice": [
+    "इ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ई",
+   "name": "vowel ī",
+   "sound": "ī",
+   "practice": [
+    "ई"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "उ",
+   "name": "vowel u",
+   "sound": "u",
+   "practice": [
+    "उ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ऊ",
+   "name": "vowel ū",
+   "sound": "ū",
+   "practice": [
+    "ऊ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ऋ",
+   "name": "vowel ṛ",
+   "sound": "ṛ",
+   "practice": [
+    "ऋ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ए",
+   "name": "vowel e",
+   "sound": "e",
+   "practice": [
+    "ए"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ऐ",
+   "name": "vowel ai",
+   "sound": "ai",
+   "practice": [
+    "ऐ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ओ",
+   "name": "vowel o",
+   "sound": "o",
+   "practice": [
+    "ओ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "औ",
+   "name": "vowel au",
+   "sound": "au",
+   "practice": [
+    "औ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "क",
+   "name": "ka",
+   "sound": "ka",
+   "practice": [
+    "क"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ख",
+   "name": "kha",
+   "sound": "kha",
+   "practice": [
+    "ख"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ग",
+   "name": "ga",
+   "sound": "ga",
+   "practice": [
+    "ग"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "घ",
+   "name": "gha",
+   "sound": "gha",
+   "practice": [
+    "घ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ङ",
+   "name": "ṅa",
+   "sound": "ṅa",
+   "practice": [
+    "ङ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "च",
+   "name": "ca",
+   "sound": "ca",
+   "practice": [
+    "च"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "छ",
+   "name": "cha",
+   "sound": "cha",
+   "practice": [
+    "छ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ज",
+   "name": "ja",
+   "sound": "ja",
+   "practice": [
+    "ज"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "झ",
+   "name": "jha",
+   "sound": "jha",
+   "practice": [
+    "झ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ञ",
+   "name": "ña",
+   "sound": "ña",
+   "practice": [
+    "ञ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ट",
+   "name": "ṭa",
+   "sound": "ṭa",
+   "practice": [
+    "ट"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ठ",
+   "name": "ṭha",
+   "sound": "ṭha",
+   "practice": [
+    "ठ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ड",
+   "name": "ḍa",
+   "sound": "ḍa",
+   "practice": [
+    "ड"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ढ",
+   "name": "ḍha",
+   "sound": "ḍha",
+   "practice": [
+    "ढ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ण",
+   "name": "ṇa",
+   "sound": "ṇa",
+   "practice": [
+    "ण"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "त",
+   "name": "ta",
+   "sound": "ta",
+   "practice": [
+    "त"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "थ",
+   "name": "tha",
+   "sound": "tha",
+   "practice": [
+    "थ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "द",
+   "name": "da",
+   "sound": "da",
+   "practice": [
+    "द"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ध",
+   "name": "dha",
+   "sound": "dha",
+   "practice": [
+    "ध"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "न",
+   "name": "na",
+   "sound": "na",
+   "practice": [
+    "न"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "प",
+   "name": "pa",
+   "sound": "pa",
+   "practice": [
+    "प"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "फ",
+   "name": "pha",
+   "sound": "pha",
+   "practice": [
+    "फ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ब",
+   "name": "ba",
+   "sound": "ba",
+   "practice": [
+    "ब"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "भ",
+   "name": "bha",
+   "sound": "bha",
+   "practice": [
+    "भ"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "म",
+   "name": "ma",
+   "sound": "ma",
+   "practice": [
+    "म"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "य",
+   "name": "ya",
+   "sound": "ya",
+   "practice": [
+    "य"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "र",
+   "name": "ra",
+   "sound": "ra",
+   "practice": [
+    "र"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ल",
+   "name": "la",
+   "sound": "la",
+   "practice": [
+    "ल"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "व",
+   "name": "va",
+   "sound": "va",
+   "practice": [
+    "व"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "श",
+   "name": "śa",
+   "sound": "śa",
+   "practice": [
+    "श"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ष",
+   "name": "ṣa",
+   "sound": "ṣa",
+   "practice": [
+    "ष"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "स",
+   "name": "sa",
+   "sound": "sa",
+   "practice": [
+    "स"
+   ]
+  },
+  {
+   "upper": "",
+   "lower": "ह",
+   "name": "ha",
+   "sound": "ha",
+   "practice": [
+    "ह"
+   ]
+  }
+ ],
+ "copy_lines": [
+  {
+   "source": "Rigveda 1.1.1",
+   "text": "अग्निमीळे पुरोहितं यज्ञस्य देवमृत्विजम्",
+   "gloss": "I praise Agni, the household priest, divine minister of the sacrifice"
+  }
+ ]
+}

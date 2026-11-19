@@ -1,0 +1,268 @@
+{
+ "id": "greek",
+ "name": "Greek",
+ "direction": "ltr",
+ "order": 1,
+ "font": "'Palatino Linotype','Times New Roman',serif",
+ "reason": "Homer (Iliad, Odyssey): names, epithets, repeated phrases",
+ "letters": [
+  {
+   "upper": "Α",
+   "lower": "α",
+   "name": "alpha",
+   "sound": "a",
+   "practice": [
+    "Α",
+    "α"
+   ]
+  },
+  {
+   "upper": "Β",
+   "lower": "β",
+   "name": "beta",
+   "sound": "b",
+   "practice": [
+    "Β",
+    "β"
+   ]
+  },
+  {
+   "upper": "Γ",
+   "lower": "γ",
+   "name": "gamma",
+   "sound": "g",
+   "practice": [
+    "Γ",
+    "γ"
+   ]
+  },
+  {
+   "upper": "Δ",
+   "lower": "δ",
+   "name": "delta",
+   "sound": "d",
+   "practice": [
+    "Δ",
+    "δ"
+   ]
+  },
+  {
+   "upper": "Ε",
+   "lower": "ε",
+   "name": "epsilon",
+   "sound": "e (short)",
+   "practice": [
+    "Ε",
+    "ε"
+   ]
+  },
+  {
+   "upper": "Ζ",
+   "lower": "ζ",
+   "name": "zeta",
+   "sound": "z / zd",
+   "practice": [
+    "Ζ",
+    "ζ"
+   ]
+  },
+  {
+   "upper": "Η",
+   "lower": "η",
+   "name": "eta",
+   "sound": "e (long)",
+   "practice": [
+    "Η",
+    "η"
+   ]
+  },
+  {
+   "upper": "Θ",
+   "lower": "θ",
+   "name": "theta",
+   "sound": "th",
+   "practice": [
+    "Θ",
+    "θ"
+   ]
+  },
+  {
+   "upper": "Ι",
+   "lower": "ι",
+   "name": "iota",
+   "sound": "i",
+   "practice": [
+    "Ι",
+    "ι"
+   ]
+  },
+  {
+   "upper": "Κ",
+   "lower": "κ",
+   "name": "kappa",
+   "sound": "k",
+   "practice": [
+    "Κ",
+    "κ"
+   ]
+  },
+  {
+   "upper": "Λ",
+   "lower": "λ",
+   "name": "lambda",
+   "sound": "l",
+   "practice": [
+    "Λ",
+    "λ"
+   ]
+  },
+  {
+   "upper": "Μ",
+   "lower": "μ",
+   "name": "mu",
+   "sound": "m",
+   "practice": [
+    "Μ",
+    "μ"
+   ]
+  },
+  {
+   "upper": "Ν",
+   "lower": "ν",
+   "name": "nu",
+   "sound": "n",
+   "practice": [
+    "Ν",
+    "ν"
+   ]
+  },
+  {
+   "upper": "Ξ",
+   "lower": "ξ",
+   "name": "xi",
+   "sound": "x",
+   "practice": [
+    "Ξ",
+    "ξ"
+   ]
+  },
+  {
+   "upper": "Ο",
+   "lower": "ο",
+   "name": "omicron",
+   "sound": "o (short)",
+   "practice": [
+    "Ο",
+    "ο"
+   ]
+  },
+  {
+   "upper": "Π",
+   "lower": "π",
+   "name": "pi",
+   "sound": "p",
+   "practice": [
+    "Π",
+    "π"
+   ]
+  },
+  {
+   "upper": "Ρ",
+   "lower": "ρ",
+   "name": "rho",
+   "sound": "r",
+   "practice": [
+    "Ρ",
+    "ρ"
+   ]
+  },
+  {
+   "upper": "Σ",
+   "lower": "σ",
+   "name": "sigma",
+   "sound": "s (ς at word end)",
+   "practice": [
+    "Σ",
+    "σ",
+    "ς"
+   ]
+  },
+  {
+   "upper": "Τ",
+   "lower": "τ",
+   "name": "tau",
+   "sound": "t",
+   "practice": [
+    "Τ",
+    "τ"
+   ]
+  },
+  {
+   "upper": "Υ",
+   "lower": "υ",
+   "name": "upsilon",
+   "sound": "u / y",
+   "practice": [
+    "Υ",
+    "υ"
+   ]
+  },
+  {
+   "upper": "Φ",
+   "lower": "φ",
+   "name": "phi",
+   "sound": "ph",
+   "practice": [
+    "Φ",
+    "φ"
+   ]
+  },
+  {
+   "upper": "Χ",
+   "lower": "χ",
+   "name": "chi",
+   "sound": "kh",
+   "practice": [
+    "Χ",
+    "χ"
+   ]
+  },
+  {
+   "upper": "Ψ",
+   "lower": "ψ",
+   "name": "psi",
+   "sound": "ps",
+   "practice": [
+    "Ψ",
+    "ψ"
+   ]
+  },
+  {
+   "upper": "Ω",
+   "lower": "ω",
+   "name": "omega",
+   "sound": "o (long)",
+   "practice": [
+    "Ω",
+    "ω"
+   ]
+  }
+ ],
+ "copy_lines": [
+  {
+   "source": "Iliad 1.1",
+   "text": "μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος",
+   "gloss": "Sing, goddess, the wrath of Achilles son of Peleus"
+  },
+  {
+   "source": "Iliad 1.1 (plain)",
+   "text": "μηνιν αειδε θεα Πηληιαδεω Αχιληος",
+   "gloss": "same line without diacritics, for first passes"
+  },
+  {
+   "source": "Odyssey 1.1 (opening)",
+   "text": "ἄνδρα μοι ἔννεπε Μοῦσα πολύτροπον ὃς μάλα πολλὰ",
+   "gloss": "Tell me, Muse, of the man of many turns"
+  }
+ ]
+}

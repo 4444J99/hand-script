@@ -4,11 +4,13 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from dataclasses import asdict
+from datetime import date
 from pathlib import Path
 
-from hand_script import __version__
+from hand_script import __version__, log, packet, scripts, sheets
 from hand_script.atlas import render_atlas
 from hand_script.curriculum import load_language_map, load_linguistics_canon
 from hand_script.etymology import load_lexical_network
@@ -32,6 +34,52 @@ def _write_output(content: str, output_path: Path | None) -> None:
     else:
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(content, encoding="utf-8")
+
+
+def cmd_sheets(args: argparse.Namespace) -> int:
+    ids = scripts.available() if args.script == "all" else [args.script]
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    for sid in ids:
+        data = scripts.load(sid)
+        for kind, fn in (("letters", sheets.letter_sheet), ("copy", sheets.copy_sheet)):
+            path = out / f"{sid}-{kind}.html"
+            path.write_text(fn(data), encoding="utf-8")
+            print(path)
+    return 0
+
+
+def _log_path(args: argparse.Namespace) -> Path:
+    return Path(args.file or os.environ.get("HAND_SCRIPT_LOG") or log.DEFAULT_PATH)
+
+
+def cmd_log_add(args: argparse.Namespace) -> int:
+    day = date.fromisoformat(args.date) if args.date else date.today()
+    entry = log.make_entry(
+        day, args.script, args.minutes, args.characters, args.lines, args.focus, args.note
+    )
+    log.append(_log_path(args), entry)
+    print(f"logged {entry['script']} {entry['minutes']} min on {entry['date']}")
+    return 0
+
+
+def cmd_log_summary(args: argparse.Namespace) -> int:
+    entries = log.read(_log_path(args))
+    print(log.format_summary(log.summarize(entries, date.today())))
+    return 0
+
+
+def cmd_packet(args: argparse.Namespace) -> int:
+    ids = scripts.available() if args.script == "all" else [args.script]
+    out = Path(args.out)
+    out.mkdir(parents=True, exist_ok=True)
+    entries = log.read(_log_path(args))
+    today = date.fromisoformat(args.date) if args.date else date.today()
+    for sid in ids:
+        path = out / f"{sid}-week-{packet.monday_of(today).isoformat()}.html"
+        path.write_text(packet.packet(scripts.load(sid), entries, today), encoding="utf-8")
+        print(path)
+    return 0
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -167,12 +215,50 @@ def build_parser() -> argparse.ArgumentParser:
     )
     p_atlas.add_argument("-o", "--output", type=Path, default=None, help="Output HTML path")
 
+    # Practice sheets / log / weekly packet (from main's sheets-log-packet layer).
+    s = sub.add_parser("sheets", help="write printable practice sheets (HTML)")
+    s.add_argument("script", help="script id or 'all'")
+    s.add_argument("--out", default="sheets")
+    s.set_defaults(fn=cmd_sheets)
+    pk = sub.add_parser("packet", help="weekly packet: progress summary + graded daily drills")
+    pk.add_argument("script", help="script id or 'all'")
+    pk.add_argument("--out", default="packets")
+    pk.add_argument("--file", help="log path")
+    pk.add_argument("--date", help="any day in the target week, YYYY-MM-DD (default today)")
+    pk.set_defaults(fn=cmd_packet)
+    lg = sub.add_parser("log", help="practice log")
+    lg.add_argument("--file", help="log path (default data/practice-log.jsonl or $HAND_SCRIPT_LOG)")
+    ls = lg.add_subparsers(dest="log_cmd", required=True)
+    a = ls.add_parser("add", help="record a practice sitting")
+    a.add_argument("script")
+    a.add_argument("--minutes", type=int, default=0)
+    a.add_argument("--characters", type=int, default=0)
+    a.add_argument("--lines", type=int, default=0)
+    a.add_argument("--focus", default="")
+    a.add_argument("--note", default="")
+    a.add_argument("--date", help="YYYY-MM-DD (default today)")
+    a.set_defaults(fn=cmd_log_add)
+    sm = ls.add_parser("summary", help="totals, per-script, streaks")
+    sm.set_defaults(fn=cmd_log_summary)
+
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+
+    # Commands registered with an fn (sheets / packet / log) dispatch directly.
+    fn = getattr(args, "fn", None)
+    if fn is not None:
+        try:
+            return fn(args)
+        except KeyError as e:
+            print(f"error: {e.args[0]}")
+            return 2
+        except ValueError as e:
+            print(f"error: {e}")
+            return 2
 
     if args.command == "manifest":
         mf = load_manifest()

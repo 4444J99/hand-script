@@ -288,3 +288,41 @@ def check_interference(
             "psychometric constants."
         ),
     )
+
+
+# --- Alphabet data files (from main: src/hand_script/data/*.json) ---
+# These are the per-script letter/practice definitions used by the
+# `sheets` / `packet` CLI commands; they live alongside the typology
+# catalog above, which is keyed by script id in data/scripts.json.
+
+
+def available() -> list[str]:
+    """Ids of the alphabet data files (those with a `letters` table).
+
+    `data/` also holds the typology/curriculum registries (`scripts.json`,
+    `languages.json`, ...), which are not alphabet sheets and are excluded
+    so `sheets all` / `packet all` only iterate loadable alphabets.
+    """
+    root = resources.files("hand_script") / "data"
+    ids = []
+    for p in root.iterdir():
+        if not p.name.endswith(".json"):
+            continue
+        try:
+            data = json.loads(p.read_text(encoding="utf-8"))
+        except (ValueError, OSError):
+            continue
+        if isinstance(data, dict) and "letters" in data:
+            ids.append(p.name[:-5])
+    return sorted(ids)
+
+
+def load(script_id: str) -> dict:
+    root = resources.files("hand_script") / "data"
+    path = root / f"{script_id}.json"
+    if not path.is_file():
+        raise KeyError(f"unknown script {script_id!r}; available: {', '.join(available())}")
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data["direction"] not in ("ltr", "rtl"):
+        raise ValueError(f"{script_id}: bad direction")
+    return data
